@@ -1,5 +1,6 @@
 @import './css/fonts.css';
 @import './css/header.css';
+@import './css/describe-block.css';
 
 /* RESET MAIN CLASSES */
 
@@ -23,6 +24,10 @@ a {
 
 .bg-black {
   background-color: #2f2d2d;
+}
+
+.bg-super-black {
+  background-color: #000;
 }
 
 .bg-yellow {
@@ -87,4 +92,8 @@ a {
 
 .text-grey {
   color: #c5c5c5;
+}
+
+.text-gothic {
+  font-family: 'TradeGothic', sans-serif;
 }

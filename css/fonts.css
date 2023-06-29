@@ -42,7 +42,7 @@
   src: url('../fonts/trade-gothic/TradeGothicLT.eot');
   src: url('../fonts/trade-gothic/TradeGothicLT.eot?#iefix') format('embedded-opentype'),
     url('../fonts/trade-gothic/TradeGothicLT.woff2') format('woff2'),
-    url('TradeGothicLT.woff') format('woff'),
+    url('../fonts/trade-gothic/TradeGothicLT.woff') format('woff'),
     url('../fonts/trade-gothic/TradeGothicLT.ttf') format('truetype'),
     url('../fonts/trade-gothic/TradeGothicLT.svg#TradeGothicLT') format('svg');
   font-weight: normal;
@@ -55,7 +55,7 @@
   src: url('../fonts/trade-gothic/TradeGothicLT-Bold.eot');
   src: url('../fonts/trade-gothic/TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/trade-gothic/TradeGothicLT-Bold.woff2') format('woff2'),
-    url('TradeGothicLT-Bold.woff') format('woff'),
+    url('../fonts/trade-gothic/TradeGothicLT-Bold.woff') format('woff'),
     url('../fonts/trade-gothic/TradeGothicLT-Bold.ttf') format('truetype'),
     url('../fonts/trade-gothic/TradeGothicLT-Bold.svg#TradeGothicLT-Bold') format('svg');
   font-weight: bold;

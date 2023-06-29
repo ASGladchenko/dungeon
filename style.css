@@ -1,4 +1,5 @@
 @import './css/fonts.css';
+@import './css/header.css';
 
 /* RESET MAIN CLASSES */
 
@@ -6,6 +7,7 @@
   margin: 0;
   padding: 0;
   outline: none;
+  font-family: 'Satoshi', sans-serif;
 }
 
 a {
@@ -85,55 +87,4 @@ a {
 
 .text-grey {
   color: #c5c5c5;
-}
-
-/* HEADER */
-
-header {
-  padding: 20px 0;
-}
-
-.header-nav {
-  width: fit-content;
-  gap: 49px;
-  @media (max-width: 1200px) {
-    gap: 30px;
-  }
-}
-
-.header-nav a {
-  font-size: 18px;
-  /* font-weight: 700; */
-  font-family: 'TradeGothic', sans-serif;
-  font-weight: bold;
-  line-height: 22px;
-
-  @media (max-width: 1200px) {
-    font-size: 14px;
-  }
-}
-.header-nav a:hover {
-  color: #fdd51e;
-}
-
-.header-nav-side {
-  gap: 45px;
-}
-
-.header-nav-side button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  gap: 12px;
-
-  @media (max-width: 1200px) {
-    font-size: 14px;
-  }
-}
-
-.logo {
-  margin-left: -118px;
-  @media (max-width: 1200px) {
-    margin-left: -60px;
-  }
 }

@@ -1,5 +1,7 @@
+@import './css/colors.css';
 @import './css/fonts.css';
 @import './css/header.css';
+@import './css/buttons.css';
 @import './css/describe-block.css';
 
 /* RESET MAIN CLASSES */
@@ -8,12 +10,18 @@
   margin: 0;
   padding: 0;
   outline: none;
+  box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
+}
+
+button:active,
+button:focus {
+  outline: none !important;
 }
 
 /* MAIN CLASSES */
@@ -23,71 +31,71 @@ a {
 }
 
 .bg-black {
-  background-color: #2f2d2d;
+  background-color: var(--black);
 }
 
 .bg-super-black {
-  background-color: #000;
+  background-color: var(--super-black);
 }
 
 .bg-yellow {
-  background-color: #fdd51e;
+  background-color: var(--yellow);
 }
 
 .bg-red {
-  background-color: #ff0000;
+  background-color: var(--red);
 }
 
 .bg-grey {
-  background-color: #696969;
+  background-color: var(--grey);
 }
 
 .bg-lightgrey {
-  background-color: #f2f6f9;
+  background-color: var(--lightgrey);
 }
 
 .bg-blue {
-  background-color: #0e9aff;
+  background-color: var(--blue);
 }
 
 .bg-charcoal {
-  background-color: #828694;
+  background-color: var(--charcoal);
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .text-black {
-  color: #2f2d2d;
+  color: var(--black);
 }
 
 .text-yellow {
-  color: #fdd51e;
+  color: var(--yellow);
 }
 
 .text-red {
-  color: #ff0000;
+  color: var(--red);
 }
 
 .text-grey {
-  color: #696969;
+  color: var(--grey);
 }
 
 .text-lightgrey {
-  color: #f2f6f9;
+  color: var(--lightgrey);
 }
 
 .text-blue {
-  color: #0e9aff;
+  color: var(--blue);
 }
 
 .text-charcoal {
-  color: #828694;
+  color: var(--charcoal);
 }
 
 .text-white {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .text-grey {

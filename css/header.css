@@ -1,0 +1,53 @@
+/* HEADER */
+
+header {
+  padding: 20px 0;
+}
+
+.header-nav {
+  width: fit-content;
+  gap: 49px;
+  @media (max-width: 1200px) {
+    gap: 30px;
+  }
+}
+
+.header-nav a {
+  font-size: 18px;
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: bold;
+  line-height: 22px;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+}
+.header-nav a:hover {
+  color: #fdd51e;
+}
+
+.header-nav-side {
+  gap: 45px;
+  @media (max-width: 1200px) {
+    gap: 30px;
+  }
+}
+
+.header-nav-side button {
+  gap: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: bold;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.logo {
+  margin-left: -95px;
+  @media (max-width: 1200px) {
+    margin-left: -60px;
+  }
+}

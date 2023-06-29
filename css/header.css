@@ -27,9 +27,14 @@ header {
 }
 
 .header-nav-side {
-  gap: 45px;
-  @media (max-width: 1200px) {
+  gap: 15px;
+
+  @media (min-width: 992px) {
     gap: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 45px;
   }
 }
 
@@ -44,10 +49,28 @@ header {
     font-size: 14px;
   }
 }
+.header-nav-side button:hover {
+  color: #fdd51e;
+}
 
 .logo {
-  margin-left: -95px;
-  @media (max-width: 1200px) {
-    margin-left: -60px;
+  max-width: 120px;
+  margin-right: -37px;
+  @media (min-width: 992px) {
+    margin-left: -120px;
   }
+
+  @media (min-width: 1200px) {
+    margin-left: -196px;
+  }
+}
+
+.cart-counter {
+  width: 17px;
+  height: 16px;
+  margin-top: 3px;
+  background-color: blue;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
 }

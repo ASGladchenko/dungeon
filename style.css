@@ -25,6 +25,10 @@ a {
   background-color: #2f2d2d;
 }
 
+.bg-super-black {
+  background-color: #000;
+}
+
 .bg-yellow {
   background-color: #fdd51e;
 }
@@ -87,4 +91,13 @@ a {
 
 .text-grey {
   color: #c5c5c5;
+}
+
+.text-gothic {
+  font-family: 'TradeGothic', sans-serif;
+}
+
+.img {
+  display: block;
+  width: 100%;
 }

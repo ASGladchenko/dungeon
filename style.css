@@ -1,3 +1,5 @@
+/* RESET MAIN CLASSES */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,30 +11,11 @@ a {
   color: white;
 }
 
-header {
-  padding: 20px 0;
-}
+/* MAIN CLASSES */
 
-.header-nav {
-  width: fit-content;
-  gap: 49px;
-}
-
-.header-nav a {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-  text-decoration: none;
-}
-
-.header-nav-side {
-  gap: 45px;
-}
-.header-nav-side button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  gap: 12px;
+.container {
+  max-width: 1440px;
+  padding: 0;
 }
 
 .bg-black {
@@ -101,4 +84,31 @@ header {
 
 .text-grey {
   color: #c5c5c5;
+}
+
+/* HEADER */
+
+header {
+  padding: 20px 0;
+}
+
+.header-nav {
+  width: fit-content;
+  gap: 49px;
+}
+
+.header-nav a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.header-nav-side {
+  gap: 45px;
+}
+.header-nav-side button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 12px;
 }

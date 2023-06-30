@@ -3,15 +3,14 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   border: none;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 6px;
   color: white;
   font-family: 'TradeGothic', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: normal;
+  font-size: 10px;
+  line-height: 12px;
   text-transform: uppercase;
   transition: background-color 0.3s ease-in-out;
 }
@@ -20,9 +19,22 @@
   box-shadow: none;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn-without-text {
+  padding: 5px;
+}
+
 /* BUTTON RED */
 .btn-red {
   background-color: var(--red);
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn-red:hover {
@@ -38,6 +50,11 @@
 /* BUTTON BLUE */
 .btn-blue {
   background-color: var(--blue);
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn-blue:hover {
@@ -53,6 +70,11 @@
 /* BUTTON BLACK */
 .btn-black {
   background-color: var(--black);
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn-black:hover {
@@ -67,15 +89,21 @@
 
 /* BUTTON YELLOW */
 .btn-yellow {
+  color: var(--black);
   background-color: var(--yellow);
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn-yellow:hover {
-  color: white;
+  color: var(--black);
   background-color: #e3bb1b;
 }
 
 .btn-yellow:active {
-  color: white;
+  color: var(--black);
   background-color: #caa919;
 }

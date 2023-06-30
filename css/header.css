@@ -11,6 +11,7 @@ header .container {
 .header-nav {
   width: fit-content;
   gap: 49px;
+
   @media (max-width: 1200px) {
     gap: 30px;
   }
@@ -141,6 +142,9 @@ header .container {
     gap: 60px;
     height: 273px;
   }
+}
+.shop-dropdown {
+  width: 100%;
 }
 
 .shop-dropdown a {

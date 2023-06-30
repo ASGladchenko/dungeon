@@ -1,5 +1,8 @@
+@import './css/colors.css';
 @import './css/fonts.css';
 @import './css/header.css';
+@import './css/buttons.css';
+@import './css/describe-block.css';
 
 /* RESET MAIN CLASSES */
 
@@ -7,12 +10,14 @@
   margin: 0;
   padding: 0;
   outline: none;
+  color: inherit;
+  box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 /* MAIN CLASSES */
@@ -22,7 +27,11 @@ a {
 }
 
 .bg-black {
-  background-color: #2f2d2d;
+  background-color: var(--black);
+}
+
+.bg-super-black {
+  background-color: var(--super-black);
 }
 
 .bg-super-black {
@@ -30,63 +39,63 @@ a {
 }
 
 .bg-yellow {
-  background-color: #fdd51e;
+  background-color: var(--yellow);
 }
 
 .bg-red {
-  background-color: #ff0000;
+  background-color: var(--red);
 }
 
 .bg-grey {
-  background-color: #696969;
+  background-color: var(--grey);
 }
 
 .bg-lightgrey {
-  background-color: #f2f6f9;
+  background-color: var(--lightgrey);
 }
 
 .bg-blue {
-  background-color: #0e9aff;
+  background-color: var(--blue);
 }
 
 .bg-charcoal {
-  background-color: #828694;
+  background-color: var(--charcoal);
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .text-black {
-  color: #2f2d2d;
+  color: var(--black);
 }
 
 .text-yellow {
-  color: #fdd51e;
+  color: var(--yellow);
 }
 
 .text-red {
-  color: #ff0000;
+  color: var(--red);
 }
 
 .text-grey {
-  color: #696969;
+  color: var(--grey);
 }
 
 .text-lightgrey {
-  color: #f2f6f9;
+  color: var(--lightgrey);
 }
 
 .text-blue {
-  color: #0e9aff;
+  color: var(--blue);
 }
 
 .text-charcoal {
-  color: #828694;
+  color: var(--charcoal);
 }
 
 .text-white {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .text-grey {
@@ -100,4 +109,31 @@ a {
 .img {
   display: block;
   width: 100%;
+}
+
+.main-banner {
+  gap: 20px;
+  width: 100vw;
+  height: calc(100vw * 0.479);
+  background-image: url('./assets/images/Hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-banner h1 {
+  margin-bottom: 0;
+  color: var(--white);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -4px;
+
+  @media (min-width: 576px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 996px) {
+    font-size: 80px;
+  }
 }

@@ -111,10 +111,18 @@ a {
   width: 100%;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+
+  @media (min-width: 996px) {
+    overflow-y: inherit;
+  }
+}
+
 .main-banner {
   gap: 20px;
   width: 100vw;
-  height: calc(100vw * 0.479);
+  height: calc(100vw * 0.4);
   background-image: url('./assets/images/Hero.png');
   background-repeat: no-repeat;
   background-size: 100%;

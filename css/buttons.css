@@ -13,6 +13,11 @@
   line-height: 12px;
   text-transform: uppercase;
   transition: background-color 0.3s ease-in-out;
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn:focus {
@@ -30,11 +35,6 @@
 /* BUTTON RED */
 .btn-red {
   background-color: var(--red);
-
-  @media (min-width: 576px) {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
 }
 
 .btn-red:hover {
@@ -50,11 +50,6 @@
 /* BUTTON BLUE */
 .btn-blue {
   background-color: var(--blue);
-
-  @media (min-width: 576px) {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
 }
 
 .btn-blue:hover {
@@ -70,11 +65,6 @@
 /* BUTTON BLACK */
 .btn-black {
   background-color: var(--black);
-
-  @media (min-width: 576px) {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
 }
 
 .btn-black:hover {
@@ -91,11 +81,6 @@
 .btn-yellow {
   color: var(--black);
   background-color: var(--yellow);
-
-  @media (min-width: 576px) {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
 }
 
 .btn-yellow:hover {
@@ -112,11 +97,6 @@
 .btn-outline-grey {
   border: 1px solid #9d9d9d;
   color: var(--black);
-
-  @media (min-width: 576px) {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
 }
 
 .btn-outline-grey:hover {

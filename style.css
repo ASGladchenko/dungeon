@@ -2,6 +2,7 @@
 @import './css/fonts.css';
 @import './css/header.css';
 @import './css/buttons.css';
+@import './css/badges.css';
 @import './css/describe-block.css';
 
 /* RESET MAIN CLASSES */
@@ -21,7 +22,6 @@ a {
 }
 
 /* MAIN CLASSES */
-
 .container {
   max-width: 1440px;
 }
@@ -102,10 +102,11 @@ a {
   font-family: 'TradeGothic', sans-serif;
 }
 
+/* MAIN BANNER */
 .main-banner {
   gap: 20px;
-  width: 100vw;
-  height: calc(100vw * 0.479);
+  width: 100%;
+  height: calc(100vw * 0.45);
   background-image: url('./assets/images/Hero.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -127,4 +128,81 @@ a {
   @media (min-width: 996px) {
     font-size: 80px;
   }
+}
+
+/* TOP CAROUSEL */
+.top-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+
+.top-carousel .top_carousel {
+  width: 300px;
+
+  @media (min-width: 768px) {
+    width: 630px;
+  }
+
+  @media (min-width: 996px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    width: 960px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1230px;
+  }
+}
+
+.top-carousel .responsive-prev,
+.top-carousel .responsive-next {
+  display: none;
+
+  @media (min-width: 996px) {
+    display: flex;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.top-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: 450px;
+}
+
+.top-item .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-item img {
+  width: 100%;
+  height: 357px;
+}
+
+.top-item .top-item_text,
+.top-item .top-item_price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--super-black);
+}
+
+.top-item .top-item_text {
+  margin-top: 10px;
+  color: var(--grey);
 }

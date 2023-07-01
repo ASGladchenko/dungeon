@@ -1,20 +1,27 @@
-.topic {
+.h1-super-big,
+.h1-mid-bold {
   user-select: none;
   position: relative;
   display: block;
-  margin-inline: auto;
   width: fit-content;
   color: var(--super-black);
-
   font-family: 'TradeGothic', sans-serif;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 50px;
   text-transform: uppercase;
 }
 
-.topic.stars::after,
-.topic.stars::before {
+.h1-super-big {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.h1-mid-bold {
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.h1-mid-bold.stars::after,
+.h1-mid-bold.stars::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -27,10 +34,10 @@
   background-repeat: no-repeat;
 }
 
-.topic.stars::after {
+.h1-mid-bold.stars::after {
   left: -20px;
 }
 
-.topic.stars::before {
+.h1-mid-bold.stars::before {
   right: -20px;
 }

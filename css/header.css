@@ -182,7 +182,7 @@ header .container {
 }
 .shop-dropdown {
   padding: 20px;
-  width: 100vw;
+  width: 100%;
   left: 0;
 }
 

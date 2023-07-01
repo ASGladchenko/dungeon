@@ -1,0 +1,34 @@
+.topic {
+  user-select: none;
+  position: relative;
+  display: block;
+  margin-inline: auto;
+  width: fit-content;
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.topic.stars::after,
+.topic.stars::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  background-image: url('../assets/images/star.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic.stars::after {
+  left: -20px;
+}
+
+.topic.stars::before {
+  right: -20px;
+}

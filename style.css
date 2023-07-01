@@ -1,8 +1,11 @@
-@import './css/colors.css';
+@import './css/tabs.css';
+@import './css/star.css';
 @import './css/fonts.css';
+@import './css/topic.css';
+@import './css/colors.css';
 @import './css/header.css';
-@import './css/buttons.css';
 @import './css/badges.css';
+@import './css/buttons.css';
 @import './css/describe-block.css';
 
 /* RESET MAIN CLASSES */
@@ -14,6 +17,10 @@
   color: inherit;
   box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
+}
+
+p {
+  margin-bottom: 0px !important;
 }
 
 a {
@@ -102,6 +109,19 @@ a {
   font-family: 'TradeGothic', sans-serif;
 }
 
+.img {
+  display: block;
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+
+  @media (min-width: 996px) {
+    overflow-y: inherit;
+  }
+}
+
 /* MAIN BANNER */
 .main-banner {
   gap: 20px;
@@ -129,6 +149,31 @@ a {
   @media (min-width: 996px) {
     font-size: 80px;
     letter-spacing: -4px;
+  }
+}
+
+/*SECTION TOP PICKS  */
+.top-picks {
+  padding: 40px 0;
+}
+
+.top-picks .topic {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.top-picks .tabs-container {
+  margin-bottom: 30px;
+}
+
+.top-picks > button {
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
   }
 }
 
@@ -210,7 +255,7 @@ a {
   color: var(--grey);
 }
 
-.carousel-block {
+.dungeon-plus {
   padding: 40px 0 42px;
 }
 

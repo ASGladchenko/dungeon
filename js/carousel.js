@@ -33,5 +33,3 @@ $(document).ready(function () {
     top.trigger('next.owl.carousel');
   });
 });
-
-console.log('hello');

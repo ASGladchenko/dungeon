@@ -7,6 +7,7 @@ expend_more.addEventListener('click', (event) => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
   }
+
   expend_more.classList.toggle('open');
   shop_dropdown.classList.toggle('open');
   document.querySelector('body').classList.toggle('overflow-hidden');

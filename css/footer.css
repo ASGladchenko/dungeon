@@ -11,25 +11,11 @@ footer .container {
   }
 }
 
-.sing-up {
-  gap: 10px;
-  flex-wrap: wrap;
-  @media (min-width: 996px) {
-    padding-right: 20px;
-    max-width: 315px;
-  }
-}
-
-.sing-up h5 {
-  margin-bottom: 0;
-}
-
 .sing-up-send {
   width: 100%;
   padding: 16px 10px;
   border-radius: 5px;
   border: none;
-  font-family: 'Satoshi', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 100%;
@@ -37,7 +23,12 @@ footer .container {
 
 .sing-up .btn-red {
   padding: 20px 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    width: fit-content;
+  }
 
   @media (min-width: 996px) {
     width: 100%;
@@ -45,6 +36,7 @@ footer .container {
 }
 
 .social-media {
+  margin-top: 20px;
   width: fit-content;
   gap: 30px;
 }

@@ -46,9 +46,15 @@
   font-family: 'TradeGothic', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: 29px;
   margin-bottom: 0;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (min-width: 996px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .p-sm-medium {

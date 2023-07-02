@@ -62,3 +62,14 @@
   font-size: 14px;
   line-height: 19px;
 }
+
+.p-sm-bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22.4px;
+}
+.p-super-small {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}

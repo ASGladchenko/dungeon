@@ -1,7 +1,8 @@
 @import './css/tabs.css';
 @import './css/star.css';
 @import './css/fonts.css';
-@import './css/topic.css';
+@import './css/footer.css';
+@import './css/topics.css';
 @import './css/colors.css';
 @import './css/header.css';
 @import './css/badges.css';
@@ -19,13 +20,17 @@
   font-family: 'Satoshi', sans-serif;
 }
 
-p {
-  margin-bottom: 0px !important;
-}
-
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+p {
+  margin-bottom: 0px !important;
 }
 
 /* MAIN CLASSES */
@@ -155,7 +160,7 @@ a {
   padding: 40px 0;
 }
 
-.top-picks .topic {
+.top-picks .h1-mid-bold {
   margin-bottom: 30px;
 
   @media (min-width: 768px) {

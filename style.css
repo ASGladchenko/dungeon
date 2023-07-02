@@ -2,6 +2,7 @@
 @import './css/star.css';
 @import './css/fonts.css';
 @import './css/footer.css';
+@import './css/review.css';
 @import './css/topics.css';
 @import './css/colors.css';
 @import './css/header.css';
@@ -119,7 +120,7 @@ p {
   width: 100%;
 }
 
-.overflow-hidden {
+.overflow-burger {
   overflow-y: hidden;
 
   @media (min-width: 996px) {

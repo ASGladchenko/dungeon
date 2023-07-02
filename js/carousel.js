@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 
   topLive.owlCarousel({
-    margin: 30,
+    margin: 20,
     nav: false,
     dots: false,
     loop: true,
@@ -54,7 +54,6 @@ $(document).ready(function () {
       },
       1400: {
         items: 4,
-        margin: 10,
       },
     },
   });

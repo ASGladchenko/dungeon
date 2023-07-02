@@ -9,10 +9,7 @@ header {
   z-index: 998;
 }
 header .container {
-  padding: 20px;
-}
-
-.header-nav.open {
+  padding: 20px 40px;
 }
 
 .header-nav {
@@ -21,7 +18,7 @@ header .container {
   left: 0;
   top: 100%;
   width: 100%;
-  background-color: white;
+  background-color: var(--white);
   height: calc(100vh - 73px);
   transform: translate(0, -100%);
   transition: all 0.5s;
@@ -36,7 +33,7 @@ header .container {
     width: fit-content;
     transform: translate(0, 0);
     gap: 15px;
-    background-color: black;
+    background-color: var(--super-black);
     z-index: -0;
   }
   @media (min-width: 1200px) {
@@ -50,14 +47,14 @@ header .container {
 }
 
 .header-nav a {
-  color: black;
+  color: var(--super-black);
   font-size: 18px;
   font-family: 'TradeGothic', sans-serif;
   font-weight: bold;
   line-height: 22px;
 
   @media (min-width: 996px) {
-    color: white;
+    color: var(--white);
   }
 
   @media (min-width: 1200px) {
@@ -66,12 +63,12 @@ header .container {
 
 .header-nav a:hover,
 .header-nav button:hover path {
-  color: #fdd51e;
-  fill: #fdd51e;
+  color: var(--yellow);
+  fill: var(--yellow);
 }
 
 .header-nav-side a:hover path {
-  fill: #fdd51e;
+  fill: var(--yellow);
 }
 
 .header-nav-side {
@@ -102,15 +99,15 @@ header .container {
 }
 
 .header-nav-side button:hover {
-  color: #fdd51e;
+  color: var(--yellow);
 }
 
 .header-nav-side button:hover path {
-  fill: #fdd51e;
+  fill: var(--yellow);
 }
 
 .header-nav-side button:hover > span {
-  color: #fdd51e;
+  color: var(--yellow);
 }
 
 .logo {
@@ -126,7 +123,7 @@ header .container {
   }
 
   @media (min-width: 1200px) {
-    margin-left: -196px;
+    margin-left: -156px;
   }
 }
 
@@ -154,11 +151,11 @@ header .container {
 }
 
 .expand-more.open {
-  color: #fdd51e;
+  color: var(--yellow);
 }
 
 .expand-more.open path {
-  fill: #fdd51e;
+  fill: var(--yellow);
 }
 
 .shop-dropdown {
@@ -187,7 +184,7 @@ header .container {
 }
 
 .shop-dropdown a {
-  color: black;
+  color: var(--super-black);
 }
 
 .shop-dropdown.open {
@@ -239,5 +236,5 @@ header .container {
 }
 
 .shop-item:hover p {
-  color: #fdd51e;
+  color: var(--yellow);
 }

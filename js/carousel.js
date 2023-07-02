@@ -2,6 +2,7 @@ $(document).ready(function () {
   const pick = $('.pick-carousel');
   const topLive = $('.top-live');
   const topReplay = $('.top-replay');
+  const trending = $('.trending-carousel');
 
   pick.owlCarousel({
     margin: 30,
@@ -67,7 +68,7 @@ $(document).ready(function () {
   });
 
   topReplay.owlCarousel({
-    margin: 30,
+    margin: 20,
     nav: false,
     dots: false,
     loop: true,
@@ -85,7 +86,6 @@ $(document).ready(function () {
       },
       1400: {
         items: 4,
-        margin: 10,
       },
     },
   });
@@ -96,5 +96,34 @@ $(document).ready(function () {
 
   $('.top-replay-next').click(function () {
     topReplay.trigger('next.owl.carousel');
+  });
+
+  trending.owlCarousel({
+    margin: 20,
+    nav: false,
+    dots: false,
+    loop: true,
+    navElement: 'button',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1200: {
+        items: 2,
+        margin: 131,
+      },
+      1400: {
+        items: 3,
+      },
+    },
+  });
+
+  $('.trending-prev').click(function () {
+    trending.trigger('prev.owl.carousel');
+  });
+
+  $('.trending-next').click(function () {
+    trending.trigger('next.owl.carousel');
   });
 });

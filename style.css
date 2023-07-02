@@ -275,10 +275,10 @@ p {
 
 /* TOP DUNGEON */
 .dungeon-plus {
-  padding: 40px 0 42px;
+  padding: 50px 0 102px;
 }
 
-/* TOP CAROUSEL */
+/* TOP (live and replays) CAROUSEL */
 .wrapper-top-carousel {
   display: flex;
   flex-direction: column;
@@ -346,7 +346,6 @@ p {
 
 .top-carousel {
   margin-top: 20px;
-
   width: 315px;
 
   @media (min-width: 768px) {
@@ -416,5 +415,124 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: #c5c5c5;
+  color: var(--grey);
+}
+
+/* TRENDING CAROUSEL */
+.wrapper-trending-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: 996px) {
+    padding: 0 60px;
+  }
+}
+
+.trending-wrapper-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 985px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1320px;
+  }
+}
+
+.trending-title {
+  gap: 10px;
+}
+
+.trending-wrapper-title h5 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.trending-title_buttons {
+  gap: 10px;
+}
+
+.trending-title_buttons h5 {
+  margin-right: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.trending-carousel {
+  margin-top: 20px;
+  width: 427px;
+
+  @media (min-width: 1200px) {
+    width: 985px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1320px;
+  }
+}
+
+.trending-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  width: 427px;
+  height: 493px;
+  color: var(--white);
+}
+
+.trending-item_img {
+  position: relative;
+  width: 427px;
+  height: 426px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trending-item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trending-item_fight {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.trending-item_address {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--grey);
 }

@@ -8,8 +8,13 @@ header {
   position: static;
   z-index: 998;
 }
+
 header .container {
-  padding: 20px 40px;
+  padding: 20px 20px;
+
+  @media (min-width: 996px) {
+    padding: 20px 40px;
+  }
 }
 
 .header-nav {
@@ -19,7 +24,7 @@ header .container {
   top: 100%;
   width: 100%;
   background-color: var(--white);
-  height: calc(100vh - 73px);
+  height: calc(100vh - 74px);
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
@@ -162,7 +167,7 @@ header .container {
   gap: 20px;
   left: 0;
   top: 100%;
-  height: calc(100vh - 73px);
+  height: calc(100vh - 74px);
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;

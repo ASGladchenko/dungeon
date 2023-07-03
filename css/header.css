@@ -24,7 +24,7 @@ header .container {
   top: 100%;
   width: 100%;
   background-color: var(--white);
-  height: calc(100vh - 74px);
+  height: 100vh;
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
@@ -167,14 +167,14 @@ header .container {
   gap: 20px;
   left: 0;
   top: 100%;
-  height: calc(100vh - 74px);
+  height: 100vh;
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
   overflow-y: auto;
 
   @media (min-width: 445px) {
-    height: calc(100vh - 83px);
+    height: 100vh;
   }
 
   @media (min-width: 996px) {

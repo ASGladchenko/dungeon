@@ -122,7 +122,7 @@ p {
 }
 
 .overflow-burger {
-  overflow-y: hidden;
+  overflow: hidden;
 
   @media (min-width: 996px) {
     overflow-y: inherit;

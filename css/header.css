@@ -176,7 +176,9 @@ header .container {
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
-  overflow-y: auto;
+
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media (min-width: 996px) {
     padding: 20px 0;

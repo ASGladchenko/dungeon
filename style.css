@@ -122,10 +122,15 @@ p {
 }
 
 .overflow-burger {
-  overflow: hidden;
+  overflow-y: hidden;
+  position: relative;
+  height: 100%;
 
   @media (min-width: 996px) {
     overflow-y: inherit;
+
+    position: static;
+    height: inherit;
   }
 }
 

@@ -8,11 +8,13 @@ expend_more.addEventListener('click', () => {
     header_nav.classList.toggle('open');
 
     document.querySelector('body').classList.toggle('overflow-burger');
+    document.querySelector('html').classList.toggle('overflow-burger');
   }
 
   expend_more.classList.toggle('open');
   shop_dropdown.classList.toggle('open');
   document.querySelector('body').classList.toggle('overflow-burger');
+  document.querySelector('html').classList.toggle('overflow-burger');
 });
 
 burger.addEventListener('click', () => {
@@ -20,8 +22,10 @@ burger.addEventListener('click', () => {
     expend_more.classList.toggle('open');
     shop_dropdown.classList.toggle('open');
     document.querySelector('body').classList.toggle('overflow-burger');
+    document.querySelector('html').classList.toggle('overflow-burger');
   }
   header_nav.classList.toggle('open');
 
   document.querySelector('body').classList.toggle('overflow-burger');
+  document.querySelector('html').classList.toggle('overflow-burger');
 });

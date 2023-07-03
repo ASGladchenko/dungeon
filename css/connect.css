@@ -1,0 +1,17 @@
+.connect {
+  padding: 60px 0 50px;
+}
+.connect .container {
+  padding: 0;
+}
+
+.connect-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.connect-item {
+  max-width: 353px;
+}

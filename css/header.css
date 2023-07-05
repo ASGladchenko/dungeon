@@ -20,11 +20,12 @@ header .container {
 .header-nav {
   padding: 20px;
   position: absolute;
+  display: none;
   left: 0;
   top: 100%;
   width: 100%;
   background-color: var(--white);
-  height: calc(100vh - 74px);
+  height: 100vh;
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
@@ -32,6 +33,7 @@ header .container {
 
   @media (min-width: 996px) {
     position: static;
+    display: flex;
     left: inherit;
     top: inherit;
     height: inherit;
@@ -47,6 +49,7 @@ header .container {
 }
 
 .header-nav.open {
+  display: flex;
   transition: all 0.3s;
   transform: translate(0%, 0%);
 }
@@ -164,28 +167,24 @@ header .container {
 }
 
 .shop-dropdown {
+  padding: 10px 20px 100px;
+  width: 100%;
   gap: 20px;
   left: 0;
   top: 100%;
-  height: calc(100vh - 74px);
+  height: 100vh;
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
-  overflow-y: auto;
 
-  @media (min-width: 445px) {
-    height: calc(100vh - 83px);
-  }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media (min-width: 996px) {
+    padding: 20px 0;
     gap: 60px;
     height: 273px;
   }
-}
-.shop-dropdown {
-  padding: 20px;
-  width: 100%;
-  left: 0;
 }
 
 .shop-dropdown a {
@@ -224,8 +223,8 @@ header .container {
 }
 
 .shop-item-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   overflow: hidden;
 

@@ -177,7 +177,7 @@ header .container {
   transition: all 0.5s;
   z-index: -1;
 
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
   @media (min-width: 996px) {

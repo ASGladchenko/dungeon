@@ -1,31 +1,67 @@
-const expend_more = document.querySelector('.expand-more');
-const shop_dropdown = document.querySelector('.shop-dropdown');
+const body = document.querySelector('body');
+const html = document.querySelector('html');
 const burger = document.querySelector('.burger');
+const search = document.querySelector('.search');
 const header_nav = document.querySelector('.header-nav');
+const expend_more = document.querySelector('.expand-more');
+const search_close = document.querySelector('.search-close');
+const shop_dropdown = document.querySelector('.shop-dropdown');
+const search_dropdown = document.querySelector('.search-dropdown');
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
 
-    document.querySelector('body').classList.toggle('overflow-burger');
-    document.querySelector('html').classList.toggle('overflow-burger');
+    body.classList.toggle('overflow-burger');
+    html.classList.toggle('overflow-burger');
   }
 
   expend_more.classList.toggle('open');
   shop_dropdown.classList.toggle('open');
-  document.querySelector('body').classList.toggle('overflow-burger');
-  document.querySelector('html').classList.toggle('overflow-burger');
+
+  body.classList.toggle('overflow-burger');
+  html.classList.toggle('overflow-burger');
 });
 
 burger.addEventListener('click', () => {
   if (expend_more.classList.contains('open')) {
     expend_more.classList.toggle('open');
     shop_dropdown.classList.toggle('open');
-    document.querySelector('body').classList.toggle('overflow-burger');
-    document.querySelector('html').classList.toggle('overflow-burger');
+    body.classList.toggle('overflow-burger');
+    html.classList.toggle('overflow-burger');
   }
+
   header_nav.classList.toggle('open');
 
-  document.querySelector('body').classList.toggle('overflow-burger');
-  document.querySelector('html').classList.toggle('overflow-burger');
+  body.classList.toggle('overflow-burger');
+  html.classList.toggle('overflow-burger');
+});
+
+search.addEventListener('click', () => {
+  if (expend_more.classList.contains('open')) {
+    expend_more.classList.toggle('open');
+    shop_dropdown.classList.toggle('open');
+
+    body.classList.toggle('overflow-burger');
+    html.classList.toggle('overflow-burger');
+  }
+
+  if (header_nav.classList.contains('open')) {
+    header_nav.classList.toggle('open');
+
+    body.classList.toggle('overflow-burger');
+    html.classList.toggle('overflow-burger');
+  }
+
+  search_dropdown.classList.toggle('open');
+
+  body.classList.toggle('overflow-burger');
+  html.classList.toggle('overflow-burger');
+});
+
+search_close.addEventListener('click', () => {
+  search_dropdown.classList.remove('open');
+
+  body.classList.toggle('overflow-burger');
+  html.classList.toggle('overflow-burger');
 });

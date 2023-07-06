@@ -24,12 +24,13 @@ header .container {
   left: 0;
   top: 100%;
   width: 100%;
-  background-color: var(--white);
   height: 100vh;
+  gap: 30px;
+  margin-bottom: 0;
+  background-color: var(--white);
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
-  gap: 30px;
 
   @media (min-width: 996px) {
     position: static;

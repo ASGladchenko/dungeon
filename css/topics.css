@@ -50,11 +50,6 @@
 
   font-size: 20px;
   line-height: 24px;
-
-  @media (min-width: 996px) {
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 .p-sm-medium {

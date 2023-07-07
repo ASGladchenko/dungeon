@@ -1,5 +1,6 @@
 @import './css/tabs.css';
 @import './css/star.css';
+@import './css/logo.css';
 @import './css/fonts.css';
 @import './css/footer.css';
 @import './css/review.css';
@@ -7,6 +8,7 @@
 @import './css/colors.css';
 @import './css/header.css';
 @import './css/badges.css';
+@import './css/search-dropdown.css';
 @import './css/connect.css';
 @import './css/buttons.css';
 @import './css/describe-block.css';
@@ -34,7 +36,9 @@ a:hover {
 p {
   margin-bottom: 0px !important;
 }
-
+ul {
+  list-style: none;
+}
 /* MAIN CLASSES */
 .container {
   max-width: 1440px;

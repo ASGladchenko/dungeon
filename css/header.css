@@ -2,15 +2,19 @@
 
 header {
   z-index: 999;
+  height: 86px;
 }
 
 .header-overlay {
   position: static;
   z-index: 998;
+
+  height: 100%;
 }
 
 header .container {
-  padding: 20px 20px;
+  padding: 0 20px;
+  height: 100%;
 
   @media (min-width: 996px) {
     padding: 20px 40px;
@@ -24,14 +28,16 @@ header .container {
   left: 0;
   top: 100%;
   width: 100%;
-  background-color: var(--white);
   height: 100vh;
+  gap: 30px;
+  margin-bottom: 0;
+  background-color: var(--white);
   transform: translate(0, -100%);
   transition: all 0.5s;
   z-index: -1;
-  gap: 30px;
 
   @media (min-width: 996px) {
+    padding: 0;
     position: static;
     display: flex;
     left: inherit;
@@ -127,11 +133,11 @@ header .container {
 
   @media (min-width: 996px) {
     max-width: 150px;
-    margin-left: -167px;
   }
-
-  @media (min-width: 1200px) {
-    margin-left: -156px;
+}
+.logo.logo-main {
+  @media (min-width: 996px) {
+    margin-left: -130px;
   }
 }
 

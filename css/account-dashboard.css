@@ -1,6 +1,3 @@
-.account-dashboard {
-}
-
 .account-dashboard h4 {
   margin-bottom: 0;
 }
@@ -146,4 +143,57 @@
   max-width: 242px;
   min-width: 162px;
   width: 100%;
+}
+
+.watch-later {
+  padding: 10px;
+}
+
+.watch-later-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch-later-btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.watch-later-carousel-container {
+  padding: 10px 0;
+}
+
+.watch-later-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 353px;
+}
+
+.watch-later-img-block {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.watch-later-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.watch-later-card-date {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--super-black);
+  text-transform: uppercase;
+}
+.watch-later-card .p-mid-medium {
+  text-transform: uppercase;
+}
+
+.watch-later-card .p-small-medium {
+  color: var(--charcoal);
 }

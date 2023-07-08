@@ -11,7 +11,6 @@ header {
 
   height: 100%;
 }
-
 header .container {
   padding: 0 20px;
   height: 100%;
@@ -52,6 +51,15 @@ header .container {
   @media (min-width: 1200px) {
     gap: 30px;
   }
+}
+
+.header-nav-account {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+.header-nav-account svg path {
+  fill: black;
 }
 
 .header-nav.open {

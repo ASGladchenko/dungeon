@@ -8,6 +8,8 @@ const search_close = document.querySelector('.search-close');
 const shop_dropdown = document.querySelector('.shop-dropdown');
 const search_dropdown = document.querySelector('.search-dropdown');
 const sing_up = document.querySelector('#btn-sing-up');
+const login = document.querySelector('#btn-login');
+const form_login = document.querySelector('.login-form');
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -69,4 +71,11 @@ search_close.addEventListener('click', () => {
 
 sing_up.addEventListener('click', () => {
   window.location.href = 'create.html';
+});
+
+login.addEventListener('click', () => {
+  window.location.href = 'account-dashboard.html';
+});
+form_login.addEventListener('submit', (e) => {
+  e.preventDefault();
 });

@@ -1,0 +1,147 @@
+.account-dashboard {
+}
+
+.account-dashboard h4 {
+  margin-bottom: 0;
+}
+
+.account-dashboard .h1-super-big {
+  color: var(--white);
+  background-color: var(--super-black);
+}
+.account-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1080px;
+  padding: 40px 0;
+  margin-inline: auto;
+
+  @media (min-width: 992px) {
+    padding: 80px 0;
+  }
+}
+
+.account-dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.account-head-welcome {
+  display: flex;
+  gap: 30px;
+}
+
+.account-welcome-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-dashboard-order {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+.account-order-history {
+  padding: 10px 15px 0;
+  border: 1px solid var(--dark-grey);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  @media (min-width: 768px) {
+    padding: 20px 30px;
+  }
+
+  @media (min-width: 992px) {
+    overflow-x: inherit;
+  }
+}
+
+.account-order-history::-webkit-scrollbar {
+  width: 40%;
+  height: 16px;
+  background-color: transparent;
+}
+
+.account-order-history::-webkit-scrollbar-thumb {
+  border: 7px solid white;
+  background-color: var(--grey);
+  border-radius: 20px;
+}
+
+.order-history-column {
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.order-history-head {
+  width: 100%;
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--dark-grey);
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.order-history-data {
+  padding-top: 5px;
+  color: var(--super-black);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+.account-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-details-info p {
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.11px;
+
+  @media (min-width: 576px) {
+    font-size: 22px;
+  }
+}
+
+.account-details-address {
+  width: fit-content;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--super-black);
+}

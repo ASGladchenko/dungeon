@@ -7,6 +7,7 @@ const expend_more = document.querySelector('.expand-more');
 const search_close = document.querySelector('.search-close');
 const shop_dropdown = document.querySelector('.shop-dropdown');
 const search_dropdown = document.querySelector('.search-dropdown');
+const sing_up = document.querySelector('#btn-sing-up');
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -64,4 +65,8 @@ search_close.addEventListener('click', () => {
 
   body.classList.toggle('overflow-burger');
   html.classList.toggle('overflow-burger');
+});
+
+sing_up.addEventListener('click', () => {
+  window.location.href = 'create.html';
 });

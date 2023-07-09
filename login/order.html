@@ -11,10 +11,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/assets/svg/logo.svg" />
+    <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="../assets/svg/logo.svg" />
   </head>
 
   <body>
@@ -43,8 +43,9 @@
               </a>
             </li>
           </ul>
-          <a href="index.html" class="logo logo-main"
-            ><img class="img" src="assets/svg/logo.svg" alt="logo"
+
+          <a href="../index.html" class="logo logo-main"
+            ><img class="img" src="../assets/svg/logo.svg" alt="logo"
           /></a>
 
           <div class="header-nav-side d-flex justify-content-center align-items-center">
@@ -131,7 +132,7 @@
               class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
             >
               <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="./assets/images/shop-droopdown/cap.png" alt="cap" />
+                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
               </div>
             </div>
           </a>
@@ -144,7 +145,7 @@
               class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
             >
               <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="./assets/images/shop-droopdown/cap.png" alt="cap" />
+                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
               </div>
             </div>
           </a>
@@ -157,7 +158,7 @@
               class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
             >
               <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="./assets/images/shop-droopdown/cap.png" alt="cap" />
+                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
               </div>
             </div>
           </a>
@@ -170,7 +171,7 @@
               class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
             >
               <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="./assets/images/shop-droopdown/cap.png" alt="cap" />
+                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
               </div>
             </div>
           </a>
@@ -183,27 +184,27 @@
               class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
             >
               <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="./assets/images/shop-droopdown/cap.png" alt="cap" />
+                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
               </div>
             </div>
           </a>
         </div>
         <div class="search-dropdown">
           <div class="search-dropdown-head">
-            <a href="index.html" class="logo"
-              ><img class="img" src="assets/svg/logo.svg" alt="logo"
+            <a href="../index.html" class="logo"
+              ><img class="img" src="../assets/svg/logo.svg" alt="logo"
             /></a>
 
             <div class="search-input-wrapper">
               <div class="search-input">
                 <div class="search-input-icon">
-                  <img class="img" src="./assets/svg/search-black.svg" alt="search" />
+                  <img class="img" src="../assets/svg/search-black.svg" alt="search" />
                 </div>
                 <input type="text" placeholder="Search for T-Shirts, Hoodies, Events|" />
               </div>
 
               <div class="search-input-icon search-close">
-                <img class="img" src="./assets/svg/close.svg" alt="close" />
+                <img class="img" src="../assets/svg/close.svg" alt="close" />
               </div>
             </div>
           </div>
@@ -219,25 +220,81 @@
         </div>
       </div>
     </header>
-    <!-- RESET PASSWORD -->
-    <section class="reset">
-      <div class="container">
-        <h1 class="h1-super-big">reset password</h1>
-        <div class="p-sm-bold">Enter a new password for noreply@shopify.com</div>
-        <form class="form-reset-password">
-          <label class="account-input">
-            <span>password</span>
-            <input type="password" placeholder="Enter your password" />
-          </label>
+    <!-- MY-ACCOUNT DASHBOARD -->
+    <section class="account-dashboard">
+      <h1 class="h1-super-big head-black-bg">my account</h1>
+      <div class="account-dashboard-container">
+        <!-- account-head -->
+        <div class="account-dashboard-head">
+          <div class="account-head-welcome">
+            <div class="account-welcome-name">
+              <p class="p-super-small">WELCOME BACK!</p>
+              <h4 class="">MICHAEL</h4>
+            </div>
+            <button class="btn btn-outline-grey">YOUR ACCOUNT</button>
+          </div>
+          <button class="btn btn-black">BACK TO ACCOUNT DETAILS</button>
+        </div>
 
-          <label class="account-input">
-            <span>re-type password</span>
-            <input type="password" placeholder="Re-type your password" />
-          </label>
-          <button class="btn btn-red">RESET PASSWORD</button>
-        </form>
+        <!-- account-order -->
+        <div class="account-dashboard-order">
+          <h4 class="h4-bold">order # 1001</h4>
+          <div class="account-order-history scroll-grey">
+            <!-- Product -->
+            <div class="order-history-column">
+              <p class="order-history-head">Product</p>
+              <p class="order-history-data">
+                <a href="product.html">Dungeon Wrestling Signature Hoodie</a>
+              </p>
+            </div>
+            <!-- SKU -->
+            <div class="order-history-column">
+              <p class="order-history-head">SKU</p>
+              <p class="order-history-data">11-00384-89</p>
+            </div>
+            <!-- PRICE -->
+            <div class="order-history-column">
+              <p class="order-history-head">PRICE</p>
+              <p class="order-history-data">$215.00 CAD</p>
+            </div>
+            <!-- QUANTITY -->
+            <div class="order-history-column">
+              <p class="order-history-head">QUANTITY</p>
+              <p class="order-history-data">1</p>
+            </div>
+            <!-- TOTAL -->
+            <div class="order-history-column">
+              <p class="order-history-head">TOTAL</p>
+              <p class="order-history-data">$215.00 CAD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- account-details -->
+        <div class="account-details">
+          <h4 class="h4-bold">BILLING ADDRESS</h4>
+          <p class="p-sm-bold">PAYMENT STATUS: PAID</p>
+          <div class="account-details-info">
+            <p>Jhon Smith</p>
+            <p>1790 SW 30th Avenue,</p>
+            <p>Hallandale Beach, Miami FL 330008, United States</p>
+
+            <a class="order-details-link" href="#">LINK</a>
+          </div>
+        </div>
+
+        <div class="account-details">
+          <h4 class="h4-bold">SHIPPING ADDRESS</h4>
+          <p class="p-sm-bold">PAYMENT STATUS: PAID</p>
+          <div class="account-details-info">
+            <p>Jhon Smith</p>
+            <p>1790 SW 30th Avenue,</p>
+            <p>Hallandale Beach, Miami FL 330008, United States</p>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- DESCRIBE_BLOCK -->
     <section
       class="d-flex justify-content-center align-items-center bg-black text-white describe-block"
@@ -398,14 +455,17 @@
       <div class="container">
         <div class="footer-info">
           <p>© 2023 DUNGEON WRESTLING.</p>
-          <p>PRIVACY POLICY | TERMS & CONDITIONS</p>
+          <p>
+            <a href="../policy-condition/policy.html">PRIVACY POLICY </a>
+            <span class="separator">| </span>
+            <a href="../policy-condition/conditions.html">TERMS & CONDITIONS</a>
+          </p>
         </div>
-      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="main.js"></script>
+    <script src="../js/owl/owl.carousel.min.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -156,3 +156,6 @@ footer .container.d-flex {
     font-size: 10px;
   }
 }
+.footer-info .separator {
+  user-select: none;
+}

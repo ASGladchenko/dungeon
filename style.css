@@ -11,13 +11,14 @@
 @import './css/scroll.css';
 @import './css/connect.css';
 @import './css/buttons.css';
-@import '../css/login/login.css';
-@import '../css/login/create.css';
+@import './css/login/login.css';
+@import './css/login/create.css';
 @import './css/describe-block.css';
-@import '../css/reset-password.css';
+@import './css/login/reset-password.css';
 @import './css/search-dropdown.css';
-@import '../css/login/account-input.css';
-@import '../css/login/account-dashboard.css';
+@import './css/login/account-input.css';
+@import './css/login/account-dashboard.css';
+@import './css/policy-condition/policy-condition.css';
 
 /* RESET MAIN CLASSES */
 

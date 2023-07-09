@@ -27,7 +27,11 @@
 
 .account-head-welcome {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+
+  @media (min-width: 440px) {
+    gap: 30px;
+  }
 }
 
 .account-welcome-name {
@@ -96,6 +100,21 @@
   flex-direction: column;
   gap: 30px;
   padding: 10px;
+}
+.account-addresses-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-addresses-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.account-details .address-default {
+  color: var(--super-black);
+  padding-bottom: 7px;
 }
 
 .account-details-info {
@@ -200,4 +219,10 @@
 
 .watch-later-card .p-small-medium {
   color: var(--charcoal);
+}
+
+.order-details-link {
+  width: fit-content;
+  padding-top: 10px;
+  color: var(--super-black);
 }

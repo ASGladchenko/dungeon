@@ -75,10 +75,15 @@
   text-transform: uppercase;
   margin-bottom: 0;
 
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 28px;
 }
-
+.p-lg-medium {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 1.1px;
+}
 .p-mid-medium {
   font-size: 18px;
   line-height: 31px;

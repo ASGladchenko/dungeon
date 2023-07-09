@@ -76,6 +76,7 @@ sing_up.addEventListener('click', () => {
 login.addEventListener('click', () => {
   window.location.href = 'account-dashboard.html';
 });
+
 form_login.addEventListener('submit', (e) => {
   e.preventDefault();
 });

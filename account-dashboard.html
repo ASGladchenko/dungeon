@@ -21,7 +21,7 @@
     <header class="bg-super-black position-relative">
       <div class="header-overlay bg-super-black">
         <div class="container d-flex align-items-center justify-content-between bg-super-black">
-             <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
+          <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
             <li><a href="#" class="text-uppercase text-lightgrey">dungeon+</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">events</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">talent</a></li>
@@ -220,35 +220,188 @@
         </div>
       </div>
     </header>
-    <!-- CREATE -->
-    <section class="create">
-      <div class="container">
-        <h1 class="h1-super-big">create account</h1>
-        <form class="form-create-account">
-          <label class="account-input">
-            <span>your name</span>
-            <input type="text" placeholder="Enter Your Name" />
-          </label>
+    <!-- MY-ACCOUNT DASHBOARD -->
+    <section class="account-dashboard">
+      <h1 class="h1-super-big account">my account</h1>
+      <div class="account-dashboard-container">
+        <!-- account-head -->
+        <div class="account-dashboard-head">
+          <div class="account-head-welcome">
+            <div class="account-welcome-name">
+              <p class="p-super-small">WELCOME BACK!</p>
+              <h4 class="">MICHAEL</h4>
+            </div>
+            <button class="btn btn-outline-grey">LOG OUT</button>
+          </div>
+          <button class="btn btn-black">BACK TO SHOPPING</button>
+        </div>
 
-          <label class="account-input">
-            <span>your email</span>
-            <input type="text" placeholder="Enter Your E-Mail" />
-          </label>
+        <!-- account-order -->
+        <div class="account-dashboard-order">
+          <h4 class="h4-bold">order history</h4>
+          <div class="account-order-history scroll-grey">
+            <!-- Order -->
+            <div class="order-history-column">
+              <p class="order-history-head">order</p>
+              <p class="order-history-data"><a href="order.html">#1001</a></p>
+            </div>
+            <!-- DATE -->
+            <div class="order-history-column">
+              <p class="order-history-head">date</p>
+              <p class="order-history-data">MAY 20, 2023</p>
+            </div>
+            <!-- PAYMENT STATUS -->
+            <div class="order-history-column">
+              <p class="order-history-head">PAYMENT STATUS</p>
+              <p class="order-history-data">PAID</p>
+            </div>
+            <!-- FULFILMENT STATUS -->
+            <div class="order-history-column">
+              <p class="order-history-head">FULFILMENT STATUS</p>
+              <p class="order-history-data">UNFULFILLED</p>
+            </div>
+            <!-- TOTAL -->
+            <div class="order-history-column">
+              <p class="order-history-head">TOTAL</p>
+              <p class="order-history-data">$215.00 CAD</p>
+            </div>
+          </div>
+        </div>
 
-          <label class="account-input">
-            <span>password</span>
-            <input type="password" placeholder="Enter your password" />
-          </label>
+        <!-- account-details -->
+        <div class="account-details">
+          <h4 class="h4-bold">account details</h4>
+          <div class="account-details-info">
+            <p>Jhon Smith</p>
+            <p>1790 SW 30th Avenue,</p>
+            <p>Hallandale Beach, Miami FL 330008, United States</p>
+          </div>
+          <a class="account-details-address" href="address.html">VIEW ADDRESSES (2)</a>
+        </div>
+        <!-- FOLLOWING -->
+        <div class="account-following">
+          <h4 class="h4-bold">following</h4>
+          <div class="account-following-container scroll-grey">
+            <!-- BRIAN PULLMAN JF -->
+            <div class="following-card">
+              <img
+                class="img"
+                src="./assets/images/account-following/brain_pullman.jpg"
+                alt="brian_pullman"
+              />
 
-          <label class="account-input">
-            <span>re-type password</span>
-            <input type="password" placeholder="Re-type your password" />
-          </label>
+              <h4 class="h4-bold">BRIAN PULLMAN JF</h4>
+              <button class="btn btn-outline-grey">UNFOLLOW</button>
+            </div>
+            <!-- MO JABARI -->
+            <div class="following-card">
+              <img
+                class="img"
+                src="./assets/images/account-following/mo_jabari.jpg"
+                alt="brian_pullman"
+              />
 
-          <button class="btn btn-blue">CREATE ACCOUNT</button>
-        </form>
+              <h4 class="h4-bold">MO JABARI</h4>
+              <button class="btn btn-outline-grey">UNFOLLOW</button>
+            </div>
+            <!-- RAJ SINGH -->
+            <div class="following-card">
+              <img
+                class="img"
+                src="./assets/images/account-following/raj_singh.jpg"
+                alt="brian_pullman"
+              />
+
+              <h4 class="h4-bold">RAJ SINGH</h4>
+              <button class="btn btn-outline-grey">UNFOLLOW</button>
+            </div>
+            <!-- KRIMSON -->
+            <div class="following-card">
+              <img
+                class="img"
+                src="./assets/images/account-following/krimson.jpg"
+                alt="brian_pullman"
+              />
+
+              <h4 class="h4-bold">KRIMSON</h4>
+              <button class="btn btn-outline-grey">UNFOLLOW</button>
+            </div>
+          </div>
+        </div>
+        <!-- FOLLOWING  END-->
+
+        <!-- WATCH-LATER  -->
+        <div class="watch-later">
+          <div class="watch-later-head">
+            <h4 class="h4-bold">WATCH LATER</h4>
+            <div class="watch-later-btn-container">
+              <button class="watch-later-prev btn btn-red btn-without-text">
+                <img src="assets/svg/arrow_back.svg" alt="arrow prev" />
+              </button>
+              <button class="watch-later-next btn btn-red btn-without-text">
+                <img src="assets/svg/arrow_forward.svg" alt="arrow next" />
+              </button>
+            </div>
+          </div>
+          <!-- WATCH-LATER CAROUSEL -->
+          <div class="watch-later-carousel-container">
+            <div class="owl-carousel owl-loaded watch-later-carousel">
+              <!-- slide -->
+              <div class="watch-later-card">
+                <div class="watch-later-img-block">
+                  <img
+                    class="img"
+                    src="./assets/images/watch-later-carousel/slide1.jpg"
+                    alt="HARRY VS KRSIS"
+                  />
+                </div>
+                <div class="watch-later-card-content">
+                  <p class="watch-later-card-date">MAY 20 | 5:30 AM</p>
+                  <p class="p-mid-medium">HARRY VS KRSIS</p>
+                  <p class="p-sm-medium">Victoria Pavilion, Calgary, Alberta</p>
+                </div>
+              </div>
+              <!--end slide -->
+              <!-- slide -->
+              <div class="watch-later-card">
+                <div class="watch-later-img-block">
+                  <img
+                    class="img"
+                    src="./assets/images/watch-later-carousel/slide2.jpg"
+                    alt="HARRY VS KRSIS"
+                  />
+                </div>
+                <div class="watch-later-card-content">
+                  <p class="watch-later-card-date">MAY 20 | 5:30 AM</p>
+                  <p class="p-mid-medium">HARRY VS KRSIS</p>
+                  <p class="p-sm-medium">Victoria Pavilion, Calgary, Alberta</p>
+                </div>
+              </div>
+              <!--end slide -->
+              <!-- slide -->
+              <div class="watch-later-card">
+                <div class="watch-later-img-block">
+                  <img
+                    class="img"
+                    src="./assets/images/watch-later-carousel/slide3.jpg"
+                    alt="HARRY VS KRSIS"
+                  />
+                </div>
+                <div class="watch-later-card-content">
+                  <p class="watch-later-card-date">MAY 20 | 5:30 AM</p>
+                  <p class="p-mid-medium">HARRY VS KRSIS</p>
+                  <p class="p-sm-medium">Victoria Pavilion, Calgary, Alberta</p>
+                </div>
+              </div>
+              <!--end slide -->
+            </div>
+          </div>
+          <!-- WATCH-LATER CAROUSEL END-->
+        </div>
+        <!-- WATCH-LATER END -->
       </div>
     </section>
+
     <!-- DESCRIBE_BLOCK -->
     <section
       class="d-flex justify-content-center align-items-center bg-black text-white describe-block"

@@ -21,7 +21,7 @@
     <header class="bg-super-black position-relative">
       <div class="header-overlay bg-super-black">
         <div class="container d-flex align-items-center justify-content-between bg-super-black">
-             <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
+          <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
             <li><a href="#" class="text-uppercase text-lightgrey">dungeon+</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">events</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">talent</a></li>
@@ -220,35 +220,81 @@
         </div>
       </div>
     </header>
-    <!-- CREATE -->
-    <section class="create">
-      <div class="container">
-        <h1 class="h1-super-big">create account</h1>
-        <form class="form-create-account">
-          <label class="account-input">
-            <span>your name</span>
-            <input type="text" placeholder="Enter Your Name" />
-          </label>
+    <!-- MY-ACCOUNT DASHBOARD -->
+    <section class="account-dashboard">
+      <h1 class="h1-super-big account">my account</h1>
+      <div class="account-dashboard-container">
+        <!-- account-head -->
+        <div class="account-dashboard-head">
+          <div class="account-head-welcome">
+            <div class="account-welcome-name">
+              <p class="p-super-small">WELCOME BACK!</p>
+              <h4 class="">MICHAEL</h4>
+            </div>
+            <button class="btn btn-outline-grey">YOUR ACCOUNT</button>
+          </div>
+          <button class="btn btn-black">BACK TO ACCOUNT DETAILS</button>
+        </div>
 
-          <label class="account-input">
-            <span>your email</span>
-            <input type="text" placeholder="Enter Your E-Mail" />
-          </label>
+        <!-- account-order -->
+        <div class="account-dashboard-order">
+          <h4 class="h4-bold">order # 1001</h4>
+          <div class="account-order-history scroll-grey">
+            <!-- Product -->
+            <div class="order-history-column">
+              <p class="order-history-head">Product</p>
+              <p class="order-history-data">
+                <a href="product.html">Dungeon Wrestling Signature Hoodie</a>
+              </p>
+            </div>
+            <!-- SKU -->
+            <div class="order-history-column">
+              <p class="order-history-head">SKU</p>
+              <p class="order-history-data">11-00384-89</p>
+            </div>
+            <!-- PRICE -->
+            <div class="order-history-column">
+              <p class="order-history-head">PRICE</p>
+              <p class="order-history-data">$215.00 CAD</p>
+            </div>
+            <!-- QUANTITY -->
+            <div class="order-history-column">
+              <p class="order-history-head">QUANTITY</p>
+              <p class="order-history-data">1</p>
+            </div>
+            <!-- TOTAL -->
+            <div class="order-history-column">
+              <p class="order-history-head">TOTAL</p>
+              <p class="order-history-data">$215.00 CAD</p>
+            </div>
+          </div>
+        </div>
 
-          <label class="account-input">
-            <span>password</span>
-            <input type="password" placeholder="Enter your password" />
-          </label>
+        <!-- account-details -->
+        <div class="account-details">
+          <h4 class="h4-bold">BILLING ADDRESS</h4>
+          <p class="p-sm-bold">PAYMENT STATUS: PAID</p>
+          <div class="account-details-info">
+            <p>Jhon Smith</p>
+            <p>1790 SW 30th Avenue,</p>
+            <p>Hallandale Beach, Miami FL 330008, United States</p>
 
-          <label class="account-input">
-            <span>re-type password</span>
-            <input type="password" placeholder="Re-type your password" />
-          </label>
+            <a class="order-details-link" href="#">LINK</a>
+          </div>
+        </div>
 
-          <button class="btn btn-blue">CREATE ACCOUNT</button>
-        </form>
+        <div class="account-details">
+          <h4 class="h4-bold">SHIPPING ADDRESS</h4>
+          <p class="p-sm-bold">PAYMENT STATUS: PAID</p>
+          <div class="account-details-info">
+            <p>Jhon Smith</p>
+            <p>1790 SW 30th Avenue,</p>
+            <p>Hallandale Beach, Miami FL 330008, United States</p>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- DESCRIBE_BLOCK -->
     <section
       class="d-flex justify-content-center align-items-center bg-black text-white describe-block"

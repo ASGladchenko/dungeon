@@ -144,12 +144,24 @@ ul {
 
 /* MAIN BANNER */
 .main-banner {
+  position: relative;
   gap: 20px;
   width: 100%;
   height: calc(100vw * 0.45);
+}
+
+.main-banner::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('./assets/images/Hero.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  filter: grayscale(90%);
+  z-index: -1;
 }
 
 .main-banner h1 {

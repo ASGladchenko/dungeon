@@ -10,12 +10,14 @@
 @import './css/header.css';
 @import './css/create.css';
 @import './css/badges.css';
+@import './css/scroll.css';
 @import './css/connect.css';
 @import './css/buttons.css';
 @import './css/account-input.css';
 @import './css/reset-password.css';
 @import './css/describe-block.css';
 @import './css/search-dropdown.css';
+@import './css/account-dashboard.css';
 
 /* RESET MAIN CLASSES */
 

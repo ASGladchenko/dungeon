@@ -21,7 +21,7 @@
     <header class="bg-super-black position-relative">
       <div class="header-overlay bg-super-black">
         <div class="container d-flex align-items-center justify-content-between bg-super-black">
-             <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
+          <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
             <li><a href="#" class="text-uppercase text-lightgrey">dungeon+</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">events</a></li>
             <li><a href="#" class="text-uppercase text-lightgrey">talent</a></li>
@@ -220,35 +220,55 @@
         </div>
       </div>
     </header>
-    <!-- CREATE -->
-    <section class="create">
-      <div class="container">
-        <h1 class="h1-super-big">create account</h1>
-        <form class="form-create-account">
-          <label class="account-input">
-            <span>your name</span>
-            <input type="text" placeholder="Enter Your Name" />
-          </label>
+    <!-- MY-ACCOUNT DASHBOARD -->
+    <section class="account-dashboard">
+      <h1 class="h1-super-big account">my account</h1>
+      <div class="account-dashboard-container">
+        <!-- account-head -->
+        <div class="account-dashboard-head">
+          <div class="account-head-welcome">
+            <div class="account-welcome-name">
+              <p class="p-super-small">WELCOME BACK!</p>
+              <h4 class="">MICHAEL</h4>
+            </div>
+            <button class="btn btn-outline-grey">YOUR ACCOUNT</button>
+          </div>
+          <button class="btn btn-black">BACK TO ACCOUNT DETAILS</button>
+        </div>
 
-          <label class="account-input">
-            <span>your email</span>
-            <input type="text" placeholder="Enter Your E-Mail" />
-          </label>
+        <!-- account-details -->
 
-          <label class="account-input">
-            <span>password</span>
-            <input type="password" placeholder="Enter your password" />
-          </label>
+        <div class="account-details">
+          <h4 class="h4-bold">YOUR ADDRESSES</h4>
+          <div class="account-addresses-wrapper">
+            <div class="account-details-info">
+              <span class="p-lg-medium">DEFAULT</span>
+              <p>Jhon Smith</p>
+              <p>1790 SW 30th Avenue,</p>
+              <p>Hallandale Beach, Miami FL 330008, United States</p>
+            </div>
+            <div class="account-addresses-btns">
+              <button class="btn btn-outline-grey">EDIT</button>
+              <button class="btn btn-outline-grey">DELETE</button>
+            </div>
+          </div>
 
-          <label class="account-input">
-            <span>re-type password</span>
-            <input type="password" placeholder="Re-type your password" />
-          </label>
-
-          <button class="btn btn-blue">CREATE ACCOUNT</button>
-        </form>
+          <div class="account-addresses-wrapper">
+            <div class="account-details-info">
+              <span class="p-lg-medium">DEFAULT</span>
+              <p>Jhon Smith</p>
+              <p>1790 SW 30th Avenue,</p>
+              <p>Hallandale Beach, Miami FL 330008, United States</p>
+            </div>
+            <div class="account-addresses-btns">
+              <button class="btn btn-outline-grey">EDIT</button>
+              <button class="btn btn-outline-grey">DELETE</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- DESCRIBE_BLOCK -->
     <section
       class="d-flex justify-content-center align-items-center bg-black text-white describe-block"

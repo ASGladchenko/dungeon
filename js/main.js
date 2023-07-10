@@ -10,6 +10,9 @@ const search_dropdown = document.querySelector('.search-dropdown');
 const sing_up = document.querySelector('#btn-sing-up');
 const login = document.querySelector('#btn-login');
 const form_login = document.querySelector('.login-form');
+const eventsBtns = document.querySelectorAll('.events-btn');
+
+console.log(form_login);
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -69,14 +72,18 @@ search_close.addEventListener('click', () => {
   html.classList.toggle('overflow-burger');
 });
 
-sing_up.addEventListener('click', () => {
+sing_up?.addEventListener('click', () => {
   window.location.href = 'create.html';
 });
 
-login.addEventListener('click', () => {
+login?.addEventListener('click', () => {
   window.location.href = 'account-dashboard.html';
 });
 
-form_login.addEventListener('submit', (e) => {
+form_login?.addEventListener('submit', (e) => {
   e.preventDefault();
 });
+
+eventsBtns.forEach((btn) =>
+  btn?.addEventListener('click', () => (window.location.pathname = 'event-pages/details.html'))
+);

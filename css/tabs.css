@@ -8,9 +8,9 @@
 
 .tab {
   border: 0;
-  padding: 15px 30px;
-  font-size: 14px;
-  line-height: 17px;
+  padding: 8px 15px;
+  font-size: 10px;
+  line-height: 12px;
   color: var(--charcoal);
   background: transparent;
   border-radius: 25px;
@@ -19,6 +19,12 @@
 
   font-family: 'TradeGothic', sans-serif;
   font-weight: bold;
+
+  @media (min-width: 576px) {
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .tab:hover {

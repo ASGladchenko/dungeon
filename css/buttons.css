@@ -9,9 +9,10 @@
   color: var(--white);
   font-family: 'TradeGothic', sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 12px;
   text-transform: uppercase;
+  white-space: nowrap;
   transition: background-color 0.3s ease-in-out;
 
   @media (min-width: 576px) {
@@ -101,10 +102,26 @@
 
 .btn-outline-grey:hover {
   color: var(--black);
-  background-color: #e6e6e6;
+  background-color: #e6e6e633;
 }
 
 .btn-outline-grey:active {
   color: var(--black);
-  background-color: #d8d8d8;
+  background-color: #d8d8d882;
+}
+
+/* BUTTON OUTLINE GREY */
+.btn-outline-blue {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-outline-blue:hover {
+  color: var(--blue);
+  background-color: #0e9aff33;
+}
+
+.btn-outline-blue:active {
+  color: var(--blue);
+  background-color: #0e9aff82;
 }

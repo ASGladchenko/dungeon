@@ -394,3 +394,56 @@
   width: 100%;
   max-width: 620px;
 }
+
+.dungeon-event {
+  margin-top: 120px;
+}
+
+.dungeon-event-upcoming {
+  margin-top: 80px;
+}
+
+.dungeon-featured {
+  margin-top: 127px;
+}
+
+.dungeon-top-carousel {
+  margin-top: 107px !important;
+}
+
+.dungeon-landing .top-carousel {
+  margin-top: 20px;
+  width: 305px;
+
+  @media (min-width: 768px) {
+    width: 630px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 955px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1280px;
+  }
+}
+
+.dungeon-landing .top-wrapper-title {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 630px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 955px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1280px;
+  }
+}
+
+.dungeon-top-carousel .top-item {
+  width: 305px;
+}

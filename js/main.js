@@ -11,6 +11,9 @@ const search_dropdown = document.querySelector('.search-dropdown');
 const sing_up = document.getElementById('btn-sing-up');
 const login = document.getElementById('btn-login');
 const form_login = document.querySelector('.login-form');
+const eventsBtns = document.querySelectorAll('.events-btn');
+
+console.log(form_login);
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -81,6 +84,10 @@ login?.addEventListener('click', () => {
 form_login?.addEventListener('submit', (e) => {
   e.preventDefault();
 });
+
+eventsBtns.forEach((btn) =>
+  btn?.addEventListener('click', () => (window.location.pathname = 'event-pages/details.html'))
+);
 
 dungeonLanding?.forEach((el) => {
   el.addEventListener('click', () => {

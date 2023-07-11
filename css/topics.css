@@ -95,6 +95,13 @@
   line-height: 33px;
   letter-spacing: 1.1px;
 }
+.p-mid-regular {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}
+
 .p-mid-medium {
   font-size: 18px;
   line-height: 31px;

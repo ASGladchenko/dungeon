@@ -6,9 +6,10 @@ const header_nav = document.querySelector('.header-nav');
 const expend_more = document.querySelector('.expand-more');
 const search_close = document.querySelector('.search-close');
 const shop_dropdown = document.querySelector('.shop-dropdown');
+const dungeonLanding = document.querySelectorAll('.to-dungeon-landing');
 const search_dropdown = document.querySelector('.search-dropdown');
-const sing_up = document.querySelector('#btn-sing-up');
-const login = document.querySelector('#btn-login');
+const sing_up = document.getElementById('btn-sing-up');
+const login = document.getElementById('btn-login');
 const form_login = document.querySelector('.login-form');
 const eventsBtns = document.querySelectorAll('.events-btn');
 
@@ -87,3 +88,9 @@ form_login?.addEventListener('submit', (e) => {
 eventsBtns.forEach((btn) =>
   btn?.addEventListener('click', () => (window.location.pathname = 'event-pages/details.html'))
 );
+
+dungeonLanding?.forEach((el) => {
+  el.addEventListener('click', () => {
+    window.location.href = 'dungeon-landing.html';
+  });
+});

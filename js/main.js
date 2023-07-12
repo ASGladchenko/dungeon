@@ -85,7 +85,7 @@ form_login?.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
-eventsBtns.forEach((btn) =>
+eventsBtns?.forEach((btn) =>
   btn?.addEventListener('click', () => (window.location.pathname = 'event-pages/details.html'))
 );
 

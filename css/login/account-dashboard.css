@@ -1,9 +1,4 @@
-.account-dashboard h4 {
-  margin-bottom: 0;
-}
-
-.account-dashboard .h1-super-big {
-  color: var(--white);
+.account-dashboard-title {
   background-color: var(--super-black);
 }
 

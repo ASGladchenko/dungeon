@@ -4,8 +4,6 @@
 }
 
 .events .head-black-bg {
-  padding: 40px 0;
-
   @media (min-width: 992px) {
     padding: 120px 0;
   }

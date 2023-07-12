@@ -94,6 +94,22 @@
   background-color: #caa919;
 }
 
+/* BUTTON GREY */
+.btn-grey {
+  color: var(--white);
+  background-color: var(--charcoal);
+}
+
+.btn-grey:hover {
+  color: var(--white);
+  background-color: #82869433;
+}
+
+.btn-grey:active {
+  color: var(--white);
+  background-color: #82869482;
+}
+
 /* BUTTON OUTLINE GREY */
 .btn-outline-grey {
   border: 1px solid #9d9d9d;

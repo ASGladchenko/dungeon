@@ -13,6 +13,7 @@
 @import './css/tickets.css';
 @import './css/buttons.css';
 @import './css/service.css';
+@import './css/talents.css';
 @import './css/event-page.css';
 @import './css/login/login.css';
 @import './css/login/create.css';
@@ -20,6 +21,7 @@
 @import './css/dungeon-pages.css';
 @import './css/describe-block.css';
 @import './css/event-upcoming.css';
+@import './css/talents-landing.css';
 @import './css/search-dropdown.css';
 @import './css/featured-talents.css';
 @import './css/login/account-input.css';

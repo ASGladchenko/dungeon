@@ -15,7 +15,7 @@ header .container {
   padding: 0 20px;
   height: 100%;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     padding: 20px 40px;
   }
 }
@@ -35,7 +35,7 @@ header .container {
   transition: all 0.3s;
   z-index: -1;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     padding: 0;
     position: static;
     display: flex;
@@ -75,7 +75,7 @@ header .container {
   font-weight: bold;
   line-height: 22px;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     color: var(--white);
   }
 
@@ -139,12 +139,12 @@ header .container {
     max-width: 130px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     max-width: 150px;
   }
 }
 .logo.logo-main {
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     margin-left: -130px;
   }
 }
@@ -194,10 +194,10 @@ header .container {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     padding: 20px 0;
     gap: 60px;
-    height: 273px;
+    height: 0;
   }
 }
 
@@ -208,9 +208,10 @@ header .container {
 .shop-dropdown.open {
   transition: all 0.5s;
   transform: translate(0%, 0%);
-}
-.shop-dropdown.open body {
-  overflow: hidden;
+
+  @media (min-width: 992px) {
+    height: 273px;
+  }
 }
 
 .shop-item {

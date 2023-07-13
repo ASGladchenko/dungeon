@@ -1,0 +1,258 @@
+.news .title {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 220px;
+}
+
+.news .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 30px;
+
+  @media (min-width: 960px) {
+    padding: 50px 80px;
+  }
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+.news-item_img {
+  max-width: 550px;
+  max-height: 550px;
+  width: 100%;
+
+  @media (min-width: 960px) {
+    max-width: 423px;
+    max-height: 423px;
+  }
+}
+
+.news-item_info {
+  max-width: 550px;
+  width: 100%;
+}
+
+.news-item_info-date {
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
+  border-bottom: 2px solid var(--red);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.news-item_info-bold {
+  margin-top: 10px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.11px;
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 22px;
+  }
+}
+
+.news-item_info-text {
+  margin-top: 10px;
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.news-item_info button {
+  margin-top: 40px;
+}
+
+/* NEWS DETAILS */
+
+.news-details .title {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 220px;
+}
+
+.news-details .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1060px;
+  gap: 30px;
+  padding: 50px 20px;
+
+  @media (min-width: 960px) {
+    padding: 50px 40px;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 50px 0;
+  }
+}
+
+.news-details_img {
+  width: 100%;
+}
+
+.news-details .news-item_info-date {
+  align-self: flex-start;
+  margin-top: -10px;
+}
+
+.news-details .news-item_info-bold {
+  margin-top: 0;
+}
+
+.news-details .news-item_info-text {
+  margin-top: 0;
+}
+
+.news-details .btn-red {
+  margin-top: 10px;
+}
+
+/* FAQ */
+
+.faq .title {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 320px;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1060px;
+
+  @media (min-width: 960px) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 60px 0;
+  }
+}
+
+.faq .container h3 {
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.11px;
+}
+
+.faq .accordion {
+  margin-top: 30px;
+  max-width: 1060px;
+  cursor: pointer;
+}
+
+.accordion-label_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.accordion-label_block .label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}
+
+.accordion-label_block .minus {
+  display: none;
+}
+
+.accordion .content {
+  margin-bottom: 20px;
+  max-height: 0;
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion.active .content {
+  max-height: auto;
+  transition: max-height 0.3s ease;
+}
+
+.accordion .hr {
+  background-color: var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+/* ABOUt */
+
+.about .title {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 400px;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px 110px;
+  max-width: 1060px;
+
+  @media (min-width: 960px) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 60px 0;
+  }
+}
+
+.about-img {
+  margin-bottom: 30px;
+  max-width: fit-content;
+}
+
+.about .container p {
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}

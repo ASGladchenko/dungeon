@@ -15,6 +15,9 @@ const form_login = document.querySelector('.login-form');
 const btnPlay = document.querySelector('.main-video button');
 const mainVideo = document.querySelector('.main-video video');
 const eventsBtns = document.querySelectorAll('.events-btn');
+const newsDetails = document.querySelectorAll('.to-news-details');
+const news = document.querySelector('.to-news');
+const accordions = document.querySelectorAll('.accordion');
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -102,4 +105,39 @@ videoPlayerPage?.addEventListener('click', () => {
 
 btnPlay?.addEventListener('click', () => {
   mainVideo.paused ? mainVideo.play() : mainVideo.pause();
+});
+
+newsDetails?.forEach((el) => {
+  el.addEventListener('click', () => {
+    window.location.href = 'news-details.html';
+  });
+});
+
+news?.addEventListener('click', () => {
+  window.location.href = 'news.html';
+});
+
+// accordions?.forEach((el) => {
+//   el.addEventListener('click', () => {});
+// });
+
+accordions?.forEach((accordion) => {
+  const labelBlock = accordion.querySelector('.accordion-label_block');
+  const content = accordion.querySelector('.content');
+  const plusIcon = accordion.querySelector('.plus');
+  const minusIcon = accordion.querySelector('.minus');
+
+  labelBlock.addEventListener('click', () => {
+    accordion.classList.toggle('active');
+
+    if (accordion.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      plusIcon.style.display = 'none';
+      minusIcon.style.display = 'inline-block';
+    } else {
+      content.style.maxHeight = '0';
+      plusIcon.style.display = 'inline-block';
+      minusIcon.style.display = 'none';
+    }
+  });
 });

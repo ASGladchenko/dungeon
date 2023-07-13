@@ -7,13 +7,14 @@ const expend_more = document.querySelector('.expand-more');
 const search_close = document.querySelector('.search-close');
 const shop_dropdown = document.querySelector('.shop-dropdown');
 const dungeonLanding = document.querySelectorAll('.to-dungeon-landing');
+const videoPlayerPage = document.querySelector('.to-video-player');
 const search_dropdown = document.querySelector('.search-dropdown');
 const sing_up = document.getElementById('btn-sing-up');
 const login = document.getElementById('btn-login');
 const form_login = document.querySelector('.login-form');
+const btnPlay = document.querySelector('.main-video button');
+const mainVideo = document.querySelector('.main-video video');
 const eventsBtns = document.querySelectorAll('.events-btn');
-
-console.log(form_login);
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -93,4 +94,12 @@ dungeonLanding?.forEach((el) => {
   el.addEventListener('click', () => {
     window.location.href = 'dungeon-landing.html';
   });
+});
+
+videoPlayerPage?.addEventListener('click', () => {
+  window.location.href = 'video-player.html';
+});
+
+btnPlay?.addEventListener('click', () => {
+  mainVideo.paused ? mainVideo.play() : mainVideo.pause();
 });

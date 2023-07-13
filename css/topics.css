@@ -82,7 +82,24 @@
 }
 
 .h1-mid-bold.stars::before {
-  right: -127px;
+  right: -20px;
+}
+
+.h1-medium {
+  font-family: 'TradeGothic', sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+
+  @media (min-width: 400px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 .h4-medium {

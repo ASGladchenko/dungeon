@@ -5,6 +5,7 @@ $(document).ready(function () {
   const trending = $('.trending-carousel');
   const talents = $('.talents-carousel');
   const watch_later = $('.watch-later-carousel');
+  const photo = $('.personal-photo');
 
   pick.owlCarousel({
     margin: 30,
@@ -189,5 +190,36 @@ $(document).ready(function () {
 
   $('.watch-later-next').click(function () {
     watch_later.trigger('next.owl.carousel');
+  });
+
+  photo.owlCarousel({
+    margin: 10,
+    nav: false,
+    dots: false,
+    loop: true,
+    navElement: 'button',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      375: {
+        items: 1,
+      },
+      768: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+    },
+  });
+
+  $('.personal-photo-prev').click(function () {
+    photo.trigger('prev.owl.carousel');
+  });
+
+  $('.personal-photo-next').click(function () {
+    photo.trigger('next.owl.carousel');
   });
 });

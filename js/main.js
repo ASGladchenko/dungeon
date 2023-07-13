@@ -15,6 +15,8 @@ const form_login = document.querySelector('.login-form');
 const btnPlay = document.querySelector('.main-video button');
 const mainVideo = document.querySelector('.main-video video');
 const eventsBtns = document.querySelectorAll('.events-btn');
+const newsDetails = document.querySelectorAll('.to-news-details');
+const news = document.querySelector('.to-news');
 
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
@@ -102,4 +104,14 @@ videoPlayerPage?.addEventListener('click', () => {
 
 btnPlay?.addEventListener('click', () => {
   mainVideo.paused ? mainVideo.play() : mainVideo.pause();
+});
+
+newsDetails?.forEach((el) => {
+  el.addEventListener('click', () => {
+    window.location.href = 'news-details.html';
+  });
+});
+
+news?.addEventListener('click', () => {
+  window.location.href = 'news.html';
 });

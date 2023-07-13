@@ -117,10 +117,6 @@ news?.addEventListener('click', () => {
   window.location.href = 'news.html';
 });
 
-// accordions?.forEach((el) => {
-//   el.addEventListener('click', () => {});
-// });
-
 accordions?.forEach((accordion) => {
   const labelBlock = accordion.querySelector('.accordion-label_block');
   const content = accordion.querySelector('.content');

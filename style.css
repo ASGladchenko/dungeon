@@ -17,6 +17,7 @@
 @import './css/talents.css';
 @import './css/event-page.css';
 @import './css/login/login.css';
+@import './css/shop-details.css';
 @import './css/login/create.css';
 @import './css/event-details.css';
 @import './css/dungeon-pages.css';
@@ -65,6 +66,8 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* MAIN CLASSES */
 .container {
@@ -157,7 +160,7 @@ ul {
   position: relative;
   height: 100%;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     overflow-y: inherit;
 
     position: static;
@@ -201,7 +204,7 @@ ul {
     letter-spacing: -4px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     font-size: 80px;
     letter-spacing: -4px;
   }
@@ -248,7 +251,7 @@ ul {
     width: 630px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     justify-content: space-between;
   }
 
@@ -266,7 +269,7 @@ ul {
   display: none;
   margin-top: 155px;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 
@@ -589,7 +592,7 @@ ul {
     padding: 0 50px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     padding: 0 60px;
   }
 }
@@ -712,7 +715,7 @@ ul {
     width: 630px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     justify-content: space-between;
   }
 
@@ -729,7 +732,7 @@ ul {
   display: none;
   margin-top: 136px;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 

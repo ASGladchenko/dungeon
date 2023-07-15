@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ</title>
+  <title>Cart</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -150,193 +150,95 @@
     </div>
   </header>
 
-  <section class="faq">
-    <div class="title bg-super-black">
-      <h1 class="h1-super-big text-white">FAQ</h1>
+  <section class="cart">
+    <div class="cart-title bg-super-black">
+      <h1 class="h1-super-big text-white">YOUR CART</h1>
     </div>
 
     <div class="container">
-      <div>
-        <h3>SHIPPING</h3>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
+      <div class="cart-container">
+        <div class="cart-subtitle">
+          <span>1 Product</span>
+          <a href="#" class="back-link">
+            <img class="img" src="../assets/svg/arrow-left.svg" alt="arrow-left" />
+            <span>Continue shopping</span>
+          </a>
         </div>
 
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
+        <div class="cart-block">
+          <div class="cart-block_title">
+            <span>PRODUCT</span>
+            <span>PRICE</span>
+            <span>QTY</span>
+            <span>TOTAL</span>
+          </div>
+
+          <div class="cart-item">
+            <div class="cart-item_product">
+              <div class="cart-item_product-close">
+                <img class="img" src="../assets/svg/close-cart.svg" alt="close" />
+              </div>
+
+              <img class="cart-item_product-img" src="../assets/images/shop/hoodies_white.png" alt="close" />
+
+              <span>Dungeon Wrestling Signature Hoodie</span>
             </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
+
+            <div class="cart-item_price">$162.99</div>
+
+            <div class="cart-item_quantity">
+              <img class="minus" src="../assets/svg/minus-grey.svg" alt="minus" />
+              <span class="cart-item_quantity-number text-center">1</span>
+              <img class="plus" src="../assets/svg/plus-grey.svg" alt="plus" />
+            </div>
+
+            <div class="cart-item_total">$162.99</div>
           </div>
 
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
+          <div class="cart-item">
+            <div class="cart-item_product">
+              <div class="cart-item_product-close">
+                <img class="img" src="../assets/svg/close-cart.svg" alt="close" />
+              </div>
 
-          <div class="hr"></div>
+              <img class="cart-item_product-img" src="../assets/images/shop/hoodies_white.png" alt="close" />
+
+              <span>Dungeon Wrestling Signature Hoodie</span>
+            </div>
+
+            <div class="cart-item_price">$162.99</div>
+
+            <div class="cart-item_quantity">
+              <img class="minus" src="../assets/svg/minus-grey.svg" alt="minus" />
+              <span class="cart-item_quantity-number text-center">1</span>
+              <img class="plus" src="../assets/svg/plus-grey.svg" alt="plus" />
+            </div>
+
+            <div class="cart-item_total">$162.99</div>
+          </div>
         </div>
 
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
+        <div class="side-menu-cart-count">
+          <div class="side-menu-cart-count-item">
+            <p class="p-sm-medium text-grey-dark">Subtotal</p>
+            <p class="p-mid-medium">$162.99</p>
+          </div>
+
+          <div class="side-menu-cart-count-item">
+            <p class="p-sm-medium text-grey-dark">Shipping</p>
+            <p class="p-sm-medium text-grey-md">Calculated at next step</p>
+          </div>
+
+          <div class="side-menu-cart-count-total">
+            <p class="p-mid-medium">Total</p>
+
+            <div class="total-bill">
+              <p class="currency">USD</p>
+              <p class="p-lg-medium">$162.99</p>
             </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
           </div>
 
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
-        </div>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
-        </div>
-      </div>
-
-      <div>
-        <h3>RETURNS</h3>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
-        </div>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
-        </div>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
-        </div>
-
-        <div class="accordion">
-          <div class="accordion-label_block">
-            <div class="label">
-              Mauris nisi velit, interdum in fringilla quis, molestie ut ante.
-            </div>
-            <img class="plus" src="../assets/svg/add.svg" alt="plus" />
-            <img class="minus" src="../assets/svg/minus.svg" alt="minus" />
-          </div>
-
-          <div class="content">
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur volutpat sapien tempor magna pharetra tincidunt. Aenean efficitur
-            augue quis convallis tempor. Praesent erat nisi, molestie a varius vel, efficitur sed
-            arcu. Vestibulum risus neque, vestibulum vitae sapien vel, semper porta felis. Quisque
-            condimentum euismod turpis, sed mollis lorem cursus porta. Curabitur et odio ac massa
-            lacinia consequat. Aenean mattis odio viverra augue laoreet tincidunt. Vivamus
-            vestibulum mauris volutpat urna varius, id varius tortor fermentum.
-          </div>
-
-          <div class="hr"></div>
+          <button class="btn btn-black">CHECK OUT</button>
         </div>
       </div>
     </div>
@@ -425,9 +327,9 @@
       <div class="navigation-block d-flex align-items-center align-items-lg-start">
         <h5>DUNGEON WRESTLING</h5>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="../service/about.html">About</a></li>
+          <li><a href="../service/news.html">News</a></li>
+          <li><a href="../service/faq.html">FAQ</a></li>
         </ul>
       </div>
 

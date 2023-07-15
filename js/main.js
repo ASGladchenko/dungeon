@@ -24,6 +24,8 @@ const close_cart = document.querySelector('#close_cart');
 const overlay = document.querySelector('#overlay');
 const menu_cart = document.querySelector('.side-menu-cart');
 
+const quantity = document.querySelectorAll('.cart-item_quantity');
+
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
@@ -159,4 +161,20 @@ close_cart?.addEventListener('click', () => {
   }, 300);
 
   body.classList.remove('overflow-hidden');
+});
+
+quantity?.forEach((counter) => {
+  const minusButton = counter.querySelector('.minus');
+  const plusButton = counter.querySelector('.plus');
+  const quantityNumber = counter.querySelector('.cart-item_quantity-number');
+
+  minusButton?.addEventListener('click', () => {
+    if (quantityNumber.textContent > 1) {
+      quantityNumber.textContent--;
+    }
+  });
+
+  plusButton?.addEventListener('click', () => {
+    quantityNumber.textContent++;
+  });
 });

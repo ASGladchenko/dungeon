@@ -1,6 +1,9 @@
 @import './css/badges.css';
 @import './css/buttons.css';
 @import './css/cart/cart.css';
+@import './css/cart/information.css';
+@import './css/cart/payment.css';
+@import './css/cart/shipping.css';
 @import './css/colors.css';
 @import './css/connect.css';
 @import './css/describe-block.css';

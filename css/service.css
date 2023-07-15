@@ -216,14 +216,28 @@
   border-bottom: 1px solid var(--black);
 }
 
-/* ABOUt */
+/* ABOUT */
 
 .about .title {
+  position: relative;
   display: flex;
   justify-content: center;
 
   align-items: center;
-  height: 400px;
+  height: calc(100vw * 0.277);
+}
+
+.about .title::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
 }
 
 .about .container {

@@ -19,6 +19,11 @@ const newsDetails = document.querySelectorAll('.to-news-details');
 const news = document.querySelector('.to-news');
 const accordions = document.querySelectorAll('.accordion');
 
+const cart = document.querySelector('#cart');
+const close_cart = document.querySelector('#close_cart');
+const overlay = document.querySelector('#overlay');
+const menu_cart = document.querySelector('.side-menu-cart');
+
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
@@ -136,4 +141,22 @@ accordions?.forEach((accordion) => {
       minusIcon.style.display = 'none';
     }
   });
+});
+
+cart?.addEventListener('click', () => {
+  overlay.classList.toggle('open');
+  setTimeout(() => {
+    menu_cart.classList.add('open');
+  }, 1);
+  body.classList.add('overflow-hidden');
+});
+
+close_cart?.addEventListener('click', () => {
+  menu_cart.classList.remove('open');
+
+  setTimeout(() => {
+    overlay.classList.remove('open');
+  }, 300);
+
+  body.classList.remove('overflow-hidden');
 });

@@ -19,14 +19,14 @@
 
   <body>
     <div class="overlay" id="overlay">
-      <div class="side-menu-cart open">
+      <div class="side-menu-cart">
         <div class="side-menu-cart-head">
           <div class="main">
             <h3 class="h1-mid-bold">Your Cart</h3>
             <p class="p-sm-medium">1 Product</p>
           </div>
 
-          <div class="close">
+          <div class="close" id="close_cart">
             <img src="./assets/svg/close-cart.svg" alt="" class="img" />
           </div>
         </div>
@@ -388,6 +388,13 @@
 
     <section class="top-picks">
       <h3 class="h1-mid-bold stars mx-auto">TOP PICKS</h3>
+      <img
+        style="margin-inline: auto; display: block; cursor: pointer"
+        src="./assets/svg/cart_black.svg"
+        alt="cart"
+        id="cart"
+      />
+
       <div class="tabs-container">
         <button class="tab active">SHOP ALL</button>
         <button class="tab">T-SHIRT</button>

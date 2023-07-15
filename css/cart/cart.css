@@ -140,6 +140,7 @@
   width: fit-content;
   height: 36px;
   border: 1px solid var(--grey-medium);
+  user-select: none;
 }
 
 .cart-item_quantity .minus,

@@ -1,0 +1,74 @@
+.side-menu-cart {
+  position: relative;
+  right: calc(-100vw);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 60px;
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  background-color: var(--white);
+
+  transition: all 0.33s ease-in-out;
+}
+
+.side-menu-cart.open {
+  /* right: calc(-100vw + 520px); */
+
+  transform: translateX(-100%);
+}
+
+.side-menu-cart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.side-menu-cart-head .main .p-sm-medium {
+  color: var(--grey-medium);
+}
+
+.side-menu-cart-head .close {
+  display: flex;
+  max-width: 48px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.side-menu-cart-count {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.side-menu-cart-count-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.side-menu-cart-count-item:last-child {
+  margin-bottom: 20px;
+}
+
+.side-menu-cart-count-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.side-menu-cart-count-total .total-bill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.side-menu-cart-count-total .total-bill .currency {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+  color: var(--grey-medium);
+}

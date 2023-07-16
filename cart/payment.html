@@ -155,7 +155,197 @@
       <h1 class="h1-super-big text-white">YOUR CART</h1>
     </div>
 
-    <div class="container">
+    <div class="payment-container container">
+      <aside class="left-sidebar">
+        <div class="left-sidebar-container">
+          <div class="left-sidebar_logo">
+            <img class="img" src="../assets/svg/logo-black.svg" alt="logo" />
+          </div>
+
+          <div class="bread-crumps">
+            <a href="#" class="p-crumps crump">Cart</a>
+            <a href="#" class="p-crumps crump active">Information</a>
+            <a href="#" class="p-crumps crump">Shipping</a>
+            <a href="#" class="p-crumps crump">Payment</a>
+          </div>
+
+          <div class="vybe-contact">
+            <div class="vybe-contact-card">
+              <div class="vybe-contact-card-left-side">
+                <p class="head">Contact</p>
+                <p class="contact-data">sample.test@testing.com</p>
+              </div>
+              <p class="change">Change</p>
+            </div>
+
+            <div class="vybe-contact-card">
+              <div class="vybe-contact-card-left-side">
+                <p class="head">Ship to</p>
+                <p class="contact-data">
+                  1790 SW 30th Avenue, Hallandale Beach, Miami FL 33008, United States
+                </p>
+              </div>
+              <p class="change">Change</p>
+            </div>
+
+            <div class="vybe-contact-card">
+              <div class="vybe-contact-card-left-side">
+                <p class="head">Method</p>
+                <p class="contact-data">
+                  Economy Inetrnational <span class="price">• $9.99</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="vybe-shipping-methods">
+            <h3>Payment</h3>
+            <p class="vybe-shipping-methods_subtitle text-gilroy">
+              All transactions are secure and encrypted.
+            </p>
+
+            <div class="vybe-shipping-container payment-shipping-block">
+              <label class="vybe-shipping-container-card no-border">
+                <div class="vybe-shipping-container-card-left-side">
+                  <input type="radio" name="card" checked />
+                  <div class="custom-red-check-box"></div>
+                  <p class="option shipping-title">Credit Card</p>
+                </div>
+
+                <div class="cost">
+                  <img src="../assets/svg/visa.svg" alt="visa" />
+                  <img src="../assets/svg/mastercard.svg" alt="mastercard" />
+                  <img src="../assets/svg/amex.svg" alt="amex" />
+                  <img src="../assets/svg/discover.svg" alt="discover" />
+                </div>
+              </label>
+
+              <label class="vybe-input-wrapper label">
+                <span class="vybe-label">Name</span>
+                <input class="vybe-input" type="text" placeholder="John Smith" />
+              </label>
+
+              <label class="vybe-input-wrapper label margin-top">
+                <span class="vybe-label">Card Number</span>
+                <input class="vybe-input" type="text" placeholder="0200 4444 0000 0000" />
+              </label>
+
+              <div class="vibe-input-block-wrapper margin-top">
+                <label class="vybe-input-wrapper">
+                  <input class="vybe-input" type="text" placeholder="Expiration date (MM/YYYY)" />
+                </label>
+
+                <label class="vybe-input-wrapper">
+                  <div class="wrapper-input-img">
+                    <input class="vybe-input" type="text" placeholder="Security code" />
+                    <a href="#" class="input-img">
+                      <img src="../assets/svg/question.svg" alt="question" class="img" />
+                    </a>
+                  </div>
+                </label>
+              </div>
+
+              <div class="hr"></div>
+
+              <label class="vybe-shipping-container-card">
+                <div class="vybe-shipping-container-card-left-side">
+                  <input type="radio" name="card" />
+                  <div class="custom-red-check-box"></div>
+                  <p class="option"><img src="../assets/svg/paypal.svg" alt="paypal"></p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="vybe-shipping-methods">
+            <h3>Billing address</h3>
+            <p class="vybe-shipping-methods_subtitle text-gilroy">
+              Select the address that matches your card or payment method.
+            </p>
+
+            <div class="vybe-shipping-container">
+              <label class="vybe-shipping-container-card">
+                <div class="vybe-shipping-container-card-left-side">
+                  <input type="radio" name="shipping" checked />
+                  <div class="custom-red-check-box"></div>
+                  <p class="option">Same as shipping address</p>
+                </div>
+              </label>
+
+              <label class="vybe-shipping-container-card">
+                <div class="vybe-shipping-container-card-left-side">
+                  <input type="radio" name="shipping" />
+                  <div class="custom-red-check-box"></div>
+                  <p class="option">Use a different billing address</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="btns">
+            <a href="#" class="vybe-return">
+              <img class="img" src="../assets/svg/arrow-left.svg" alt="arrow-left" />
+              Return to Shipping
+            </a>
+            <button class="btn btn-black">PAY NOW</button>
+          </div>
+
+          <div class="left-sidebar_footer">
+            <a href="#" class="text-gilroy">Refund policy</a>
+            <a href="#" class="text-gilroy">Privacy policy</a>
+            <a href="#" class="text-gilroy">Terms of service</a>
+          </div>
+        </div>
+      </aside>
+
+      <aside class="right-sidebar">
+        <div class="right-sidebar-container">
+          <h5 class="right-sidebar_title text-gilroy">Order Summary</h5>
+
+          <div class="right-sidebar_subtitleblock">
+            <div class="right-sidebar_img">
+              <span>4</span>
+              <img src="../assets/images/shop/hoodies_white.png" alt="hoodies" />
+            </div>
+
+            <span class="right-sidebar_text text-gilroy">Dungeon Wrestling Signature Hoodie</span>
+            <span class="right-sidebar_total text-gilroy">$162.99</span>
+          </div>
+
+          <div class="right-sidebar_inputblock">
+            <label class="vybe-input-wrapper">
+              <input class="vybe-input" type="text" placeholder="Some text" />
+            </label>
+            <button class="btn-apply">apply</button>
+          </div>
+
+          <div class="right-sidebar_count text-gilroy">
+            <div class="right-sidebar_count-item">
+              <p class="p-sm-medium text-gilroy">Subtotal</p>
+              <p class="p-mid-medium text-gilroy">$162.99</p>
+            </div>
+
+            <div class="right-sidebar_count-item">
+              <p class="p-sm-medium text-gilroy">Shipping</p>
+              <p class="p-sm-medium text-gilroy">$9.99</p>
+            </div>
+
+            <div class="right-sidebar_count-item">
+              <p class="p-sm-medium text-gilroy">Taxes</p>
+              <p class="p-sm-medium text-gilroy">$5.99</p>
+            </div>
+
+            <div class="right-sidebar_count-paid">
+              <p class="p-mid-medium text-gilroy">Total</p>
+
+              <div class="right-sidebar_total-bill">
+                <p class="currency text-gilroy">USD</p>
+                <p class="p-lg-medium text-gilroy">$162.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 

@@ -13,7 +13,7 @@
   width: 100%;
   background-color: transparent;
   border: none;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -22,7 +22,7 @@
 }
 
 .vybe-input-wrapper .vybe-input::placeholder {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -56,7 +56,7 @@
 }
 
 .vybe-label {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
@@ -96,7 +96,7 @@
 }
 
 .vybe-checkbox .checkbox-label {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 10px;
@@ -143,6 +143,11 @@
 .vybe-input-wrapper.open .drop-down-img {
   transform: rotate(180deg);
   transition: all 0.16s ease-in;
+}
+
+.vibe-input-block-wrapper {
+  display: flex;
+  gap: 24px;
 }
 
 .bread-crumps {
@@ -203,6 +208,7 @@
   justify-content: space-between;
   align-items: baseline;
 }
+
 .vybe-contact-card:not(:last-child) {
   padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
@@ -217,7 +223,7 @@
 .vybe-contact-card-left-side .head,
 .vybe-contact-card-left-side .contact-data,
 .vybe-contact-card .change {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.28px;
@@ -255,11 +261,20 @@
 }
 
 .vybe-shipping-methods h3 {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
   color: #121212;
+}
+
+.vybe-shipping-methods_subtitle {
+  color: var(--grey-medium);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
 }
 
 .vybe-shipping-container-card {
@@ -267,6 +282,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
 }
 .vybe-shipping-container-card:not(:last-child) {
   padding-bottom: 10px;
@@ -295,7 +311,7 @@
 }
 .vybe-shipping-container-card .cost,
 .vybe-shipping-container-card .option {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 160%;
@@ -304,6 +320,13 @@
 }
 
 .vybe-shipping-container-card .cost {
+  display: flex;
+  gap: 5px;
   font-size: 16px;
   line-height: 150%;
+}
+
+.vybe-shipping-container-card .cost img {
+  width: 40px;
+  height: 28px;
 }

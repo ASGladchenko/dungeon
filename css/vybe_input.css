@@ -169,31 +169,25 @@
 }
 
 .vybe-return {
-  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #848484;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
-  color: #848484;
-
   font-style: normal;
+  white-space: nowrap;
 }
 
-.vybe-return::before {
-  position: absolute;
+.vybe-return img {
   width: 22px;
   height: 22px;
-  content: '';
-  display: block;
-  left: -18px;
-  top: 50%;
-  background-image: url(../assets/svg/arrow-right.svg);
-  background-size: cover;
-  user-select: none;
-  transform: translate(0, -50%) rotate(180deg);
 }
+
 .vybe-contact,
-.vybe-shiping-container {
+.vybe-shipping-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -253,14 +247,14 @@
   cursor: pointer;
 }
 
-.vybe-shiping-methods {
+.vybe-shipping-methods {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
 }
 
-.vybe-shiping-methods h3 {
+.vybe-shipping-methods h3 {
   font-family: 'Gilroy';
   font-size: 18px;
   font-weight: 700;
@@ -268,18 +262,18 @@
   color: #121212;
 }
 
-.vybe-shiping-container-card {
+.vybe-shipping-container-card {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.vybe-shiping-container-card:not(:last-child) {
+.vybe-shipping-container-card:not(:last-child) {
   padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.vybe-shiping-container-card input {
+.vybe-shipping-container-card input {
   display: none;
 }
 
@@ -291,16 +285,16 @@
   border: 2px solid #d00d29;
 }
 
-.vybe-shiping-container-card-left-side {
+.vybe-shipping-container-card-left-side {
   display: flex;
   gap: 13px;
 }
 
-.vybe-shiping-container-card input:checked + .custom-red-check-box {
+.vybe-shipping-container-card input:checked + .custom-red-check-box {
   border-width: 8px;
 }
-.vybe-shiping-container-card .cost,
-.vybe-shiping-container-card .option {
+.vybe-shipping-container-card .cost,
+.vybe-shipping-container-card .option {
   font-family: 'Gilroy';
   font-size: 14px;
   font-weight: 600;
@@ -309,7 +303,7 @@
   color: #383838;
 }
 
-.vybe-shiping-container-card .cost {
+.vybe-shipping-container-card .cost {
   font-size: 16px;
   line-height: 150%;
 }

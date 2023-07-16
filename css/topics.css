@@ -164,3 +164,19 @@
   font-size: 10px;
   line-height: 14px;
 }
+
+.p-crumps {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+  color: #848484;
+}
+
+.p-crumps.active {
+  font-weight: 800;
+  letter-spacing: 0.24px;
+
+  color: #121212;
+}

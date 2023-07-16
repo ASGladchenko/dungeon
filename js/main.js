@@ -26,6 +26,8 @@ const menu_cart = document.querySelector('.side-menu-cart');
 
 const quantity = document.querySelectorAll('.cart-item_quantity');
 
+const vybe_select = document.getElementById('vybe-selct-1');
+
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
@@ -177,4 +179,8 @@ quantity?.forEach((counter) => {
   plusButton?.addEventListener('click', () => {
     quantityNumber.textContent++;
   });
+});
+
+vybe_select?.addEventListener('click', () => {
+  vybe_select.classList.toggle('open');
 });

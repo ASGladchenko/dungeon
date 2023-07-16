@@ -173,6 +173,10 @@ ul {
   font-family: 'TradeGothic', sans-serif;
 }
 
+.text-gilroy {
+  font-family: Gilroy, sans-serif;
+}
+
 .img {
   display: block;
   width: 100%;

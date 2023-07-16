@@ -74,6 +74,5 @@
 }
 
 .accordion .hr {
-  background-color: var(--black);
   border-bottom: 1px solid var(--black);
 }

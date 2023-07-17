@@ -147,7 +147,13 @@
 
 .vibe-input-block-wrapper {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  @media (min-width: 576px) {
+    font-size: 16px;
+    gap: 24px;
+  }
 }
 
 .bread-crumps {
@@ -197,9 +203,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 12px 20px;
+  padding: 10px;
   border-radius: 2px;
   border: 1px solid #383838;
+
+  @media (min-width: 576px) {
+    padding: 12px 20px;
+  }
 }
 
 .vybe-contact-card {
@@ -207,6 +217,12 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  gap: 10px;
+
+  @media (min-width: 576px) {
+    gap: 0;
+  }
 }
 
 .vybe-contact-card:not(:last-child) {
@@ -217,14 +233,18 @@
 .vybe-contact-card-left-side {
   display: flex;
   align-items: baseline;
-  gap: 32px;
+  gap: 8px;
+
+  @media (min-width: 576px) {
+    gap: 32px;
+  }
 }
 
 .vybe-contact-card-left-side .head,
 .vybe-contact-card-left-side .contact-data,
 .vybe-contact-card .change {
   font-family: 'Gilroy', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.28px;
 
@@ -239,7 +259,6 @@
 }
 
 .vybe-contact-card-left-side .contact-data {
-  min-width: 170px;
   max-width: 280px;
   color: #383838;
 }

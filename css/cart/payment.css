@@ -38,12 +38,41 @@
   background-color: var(--gainsboro);
 }
 
+.payment .vybe-shipping-container .vybe-shipping-container-card {
+  align-items: center;
+}
+
+.payment .vybe-shipping-container-card-left-side {
+  align-items: center;
+}
+
 .payment .option.shipping-title {
   color: var(--darkSlate);
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+  }
+}
+.payment .cost .cost-img {
+  max-width: 25px;
+
+  @media (min-width: 400px) {
+    max-width: 30px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 40px;
+  }
+}
+
+.payment .cost .cost-img img {
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
 }
 
 .payment .btns {

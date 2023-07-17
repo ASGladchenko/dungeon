@@ -130,6 +130,7 @@
   padding: 65px 20px;
   width: 100%;
   box-shadow: none;
+  background-color: #fafafa;
 
   @media (min-width: 960px) {
     max-width: 604px;

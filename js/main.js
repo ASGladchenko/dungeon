@@ -99,7 +99,7 @@ form_login?.addEventListener('submit', (e) => {
 });
 
 eventsBtns?.forEach((btn) =>
-  btn?.addEventListener('click', () => (window.location.pathname = 'event-pages/details.html'))
+  btn?.addEventListener('click', () => (window.location.href = 'details.html'))
 );
 
 dungeonLanding?.forEach((el) => {

@@ -7,7 +7,7 @@
   margin-top: 32px;
 }
 
-.inforamtion-contact-block {
+.information-contact-block {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
   padding: 32px 0;
 }
 
-.inforamtion-contact-block .head {
+.information-contact-block .head {
   display: flex;
   justify-content: center;
   align-items: center;

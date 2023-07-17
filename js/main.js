@@ -28,6 +28,12 @@ const quantity = document.querySelectorAll('.cart-item_quantity');
 
 const vybe_select = document.getElementById('vybe-selct-1');
 
+const cartPage = document.querySelector('.to-cart');
+const information = document.querySelector('.to-information');
+const shipping = document.querySelector('.to-shipping');
+const payment = document.querySelector('.to-payment');
+const success = document.querySelector('.to-success');
+
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
@@ -183,4 +189,24 @@ quantity?.forEach((counter) => {
 
 vybe_select?.addEventListener('click', () => {
   vybe_select.classList.toggle('open');
+});
+
+cartPage?.addEventListener('click', () => {
+  window.location.href = 'cart/details.html';
+});
+
+information?.addEventListener('click', () => {
+  window.location.href = 'information.html';
+});
+
+shipping?.addEventListener('click', () => {
+  window.location.href = 'shipping.html';
+});
+
+payment?.addEventListener('click', () => {
+  window.location.href = 'payment.html';
+});
+
+success?.addEventListener('click', () => {
+  window.location.href = 'success.html';
 });

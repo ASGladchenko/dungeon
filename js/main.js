@@ -28,6 +28,8 @@ const quantity = document.querySelectorAll('.cart-item_quantity');
 
 const vybe_select = document.getElementById('vybe-selct-1');
 
+const cartPage = document.querySelector('.to-cart');
+
 expend_more.addEventListener('click', () => {
   if (header_nav.classList.contains('open')) {
     header_nav.classList.toggle('open');
@@ -183,4 +185,8 @@ quantity?.forEach((counter) => {
 
 vybe_select?.addEventListener('click', () => {
   vybe_select.classList.toggle('open');
+});
+
+cartPage?.addEventListener('click', () => {
+  window.location.href = 'cart/details.html';
 });

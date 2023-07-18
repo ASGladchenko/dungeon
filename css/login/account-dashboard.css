@@ -179,6 +179,14 @@
   width: 100%;
 }
 
+.following-card .h4-bold {
+  font-size: 16px;
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+}
+
 .watch-later {
   padding: 10px;
 }
